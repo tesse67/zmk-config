@@ -95,10 +95,11 @@
 //TAB|       ALT/N | GUI/R | SHIFT/T | CTRL/S |   B   |              |  Y  | CTRL/N | SHIFT/E | GUI/I | ALT/A | ENTER |
 // |  layer|   J   |   V   |    D    |   G    |   Q   |              |  M  |   H    |    .    |   ,   |   /   | layer |
 //                                   | ALT  | RAISE | ESC |  | TODO |SPACE | LOWER  | 
+//&hr RCTRL N &hr RSHFT E &hr RGUI I
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
-          &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp U
-&kp ENTER &hl LALT C &hl LGUI R &hl LSHFT S &hl LCTRL T &kp B                       &kp F     &hr RCTRL N &hr RSHFT E &hr RGUI I &hr RALT A &kp BSPC
+          &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
+&kp ENTER &hl LALT C &hl LGUI R &hl LSHFT S &hl LCTRL T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
                                 &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &mo LOWER &kp SPACE
             >;
@@ -131,8 +132,8 @@
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
          &kp F1        &kp F2      &kp F3         &kp F4         &kp F5                  &kp F6    &kp F7         &kp F8          &kp F9       &kp F10   
-         &kp N1        &kp EQUAL   &kp LBRC       &kp RBRC       &kp N5                  &kp N6    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
-&kp TAB  &hl LALT EXCL &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR &kp HASH             &kp AT       &hr RCTRL AMPS &hr RSHFT ASTRK &hr RGUI LPAR &hr RALT COLON &kp F11
+         &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC       &kp N5                  &kp N6    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
+&kp TAB  &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR &kp HASH             &kp AT       &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp F11
 &kp GRAVE &kp PIPE     &kp AMPS    &kp RBKT        &kp LBRC       &kp HASH                &kp LBKT  &kp RBKT       &kp TILDE       &kp PRCNT   &kp SEMI     &kp F12 
                                                    &trans         &trans    &trans &trans &trans    &trans     
             >;
