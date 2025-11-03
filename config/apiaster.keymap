@@ -100,7 +100,7 @@
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp U
 &kp ENTER &hl LALT C &hl LGUI R &hl LSHFT S &hl LCTRL T &kp B                       &kp F     &hr RCTRL N &hr RSHFT E &hr RGUI I &hr RALT A &kp BSPC
 &kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
-                                &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &kp LOWER &mo SPACE
+                                &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &mo LOWER &kp SPACE
             >;
         };
 
