@@ -91,14 +91,15 @@
 // ------------------------------------------------------------------------------------------------------------
 //         |   1   |   2   |    3    |   4    |   5   |              |  6  |   7    |    8    |   9   |   0   |       
 //         |   W   |   L   |    Y    |   P    |   K   |              |  Z  |   X    |    O    |   U   |  TODO |        
-//TAB(todo,hr)| ALT/N | GUI/R | SHIFT/T | CTRL/S |   B   |              |  Y  | CTRL/N | SHIFT/E | GUI/I | ALT/A | ENTER |
+//(todo,hr)  TODO?                                                                                      //TODO!
+//TAB|       ALT/N | GUI/R | SHIFT/T | CTRL/S |   B   |              |  Y  | CTRL/N | SHIFT/E | GUI/I | ALT/A | ENTER |
 // |  layer|   J   |   V   |    D    |   G    |   Q   |              |  M  |   H    |    .    |   ,   |   /   | layer |
-//                                   | LOWER  | SPACE | ESC |  | DEL |BACK | RAISE  | 
+//                                   | ALT  | RAISE | ESC |  | TODO |SPACE | LOWER  | 
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp U
-&kp TAB   &hl LALT C &hl LGUI R &hl LSHFT S &hl LCTRL T &kp B                       &kp F     &hr RCTRL N &hr RSHFT E &hr RGUI I &hr RALT A &kp ENTER
-&kp BSLH  &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
+&kp TAB   &hl LALT C &hl LGUI R &hl LSHFT S &hl LCTRL T &kp B                       &kp F     &hr RCTRL N &hr RSHFT E &hr RGUI I &hr RALT A &kp BSPC
+&kp ENTER &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
                                 &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &kp SPACE &mo LOWER
             >;
         };
