@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/* #include "zmk-helpers/helper.h" */
+#include "zmk-helpers/helper.h"
 /* #include "zmk-helpers/unicode-chars/german.dtsi" */
 #include <behaviors/unicode.dtsi>
 
@@ -60,6 +60,12 @@ name: name##_mod_tap {                     \
   linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
   win-compose-key = <RALT>;        // Overwrite WinCompose compose key
 };
+
+ZMK_BEHAVIOR(testo, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp A &kp U &kp S>;
+)
 
 / {    
     macros {
@@ -146,7 +152,7 @@ name: name##_mod_tap {                     \
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
 &kp ENTER &hl LALT C &ht_gui 0 R &hl LSHFT S &ht_gui 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
-                                &lm QWERTY LALT  &mo RAISE &kp ESC      &uc UC_DE_AE  &mo LOWER &kp SPACE
+                                &ht_alt ESC &mo RAISE   &kp ESC                 &testo  &mo LOWER   &kp SPACE
             >;
         };
 
@@ -194,9 +200,9 @@ name: name##_mod_tap {                     \
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &kp C_PREV &kp C_RW     &kp C_PP     &kp C_FF     &kp C_NEXT                   &kp PG_UP    &kp HOME     &kp UP       &kp END      &bt BT_CLR
-&sys_reset &kp CLCK   &kp INS      &kp PSCRN    &kp K_CMENU  &studio_unlock               &kp PG_DN    &kp LEFT     &kp DOWN     &kp RIGHT    &soft_off   &sys_reset
-&trans    &trans     &trans       &tog QWERTY  &to WASD     &bootloader                  &bootloader  &trans       &trans       &trans       &kp C_PWR   &trans
+          &kp C_PREV &kp C_RW     &kp C_PP     &kp C_FF     &kp C_NEXT                   &kp PG_UP    &kp DEL     &kp UP       &kp INS      &bt BT_CLR
+&sys_reset &kp CLCK   &kp INS      &kp ENTER    &kp K_CMENU  &studio_unlock               &kp PG_UP    &kp LEFT     &kp DOWN     &kp RIGHT    &soft_off   &sys_reset
+&trans    &trans     &trans       &tog QWERTY  &to WASD     &bootloader                   &kp PG_DN  &trans       &trans       &trans       &kp C_PWR   &trans
                                                &trans       &trans         &trans &trans &trans       &trans 
             >;
         };
