@@ -54,6 +54,13 @@ name: name##_mod_tap {                     \
     bindings = <macro>, <&kp>;             \
 };
 
+&uc {
+  default-mode = <UC_MODE_LINUX>;  // Default to Linux input system
+  minimum-length = <0>;            // Set to desired minimum input length
+  linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
+  win-compose-key = <RALT>;        // Overwrite WinCompose compose key
+};
+
 / {    
     macros {
         wasdt: wasd_type {
@@ -139,7 +146,7 @@ name: name##_mod_tap {                     \
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
 &kp ENTER &hl LALT C &ht_gui 0 R &hl LSHFT S &ht_gui 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
-                                &lm QWERTY LALT  &mo RAISE &kp ESC      &uc 0xE4 0xC4  &mo LOWER &kp SPACE
+                                &lm QWERTY LALT  &mo RAISE &kp ESC      &uc UC_DE_AE  &mo LOWER &kp SPACE
             >;
         };
 
