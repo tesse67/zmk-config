@@ -69,9 +69,7 @@ name: name##_mod_tap {                     \
             bindings
                 = <&macro_tap &tog WASD &tog WASD_TYPE>;
         };
-    };
-
- zed_em_kay: zed_em_kay {
+      zed_em_kay: zed_em_kay {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -80,6 +78,9 @@ name: name##_mod_tap {                     \
         , <&macro_release &kp LSHFT>
         ;
     };
+
+    };
+
 
     behaviors {
         HOME_ROW_MOD_TAP(ht_alt, &qalt)
