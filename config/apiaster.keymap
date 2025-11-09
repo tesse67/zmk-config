@@ -80,6 +80,30 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        paster: paster{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp V>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        copyer: copyer{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp C>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+
+
     };
 
     behaviors {
@@ -155,9 +179,9 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
-&kp ENTER &hl LALT C &ht_gui 0 R &hl LSHFT S &ht_gui 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
-&kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
-                                &lm QWERTY LALT  &mo RAISE &kp ESC      &zed_em_kay  &mo LOWER &kp SPACE
+&kp ENTER &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
+&kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &paster
+                                &lm QWERTY LALT  &mo RAISE &kp ESC      &copyer   &mo LOWER &kp SPACE
             >;
         };
 
