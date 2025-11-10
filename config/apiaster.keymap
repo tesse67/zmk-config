@@ -362,9 +362,9 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
-&kp TAB &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
+&key_repeat &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH &sukusho
-                                &ht_alt 0 ESC  &lt RAISE ENTER &paster      &caps_word  &lt NUMPAD key_repeat &lt LOWER SPACE
+                                &ht_alt 0 ESC  &lt RAISE ENTER &paster      &caps_word  &lt NUMPAD TAB &lt LOWER SPACE
             >;
         };
 
