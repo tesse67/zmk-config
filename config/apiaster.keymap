@@ -381,7 +381,7 @@ name: name##_mod_tap {                     \
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &kp ENTER &hl LSHFT C &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RSHFT SEMI &kp BSPC
 &kp ESC   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
-                                &lm QWERTY LALT  &mo RAISE &kp ESC          &kp ESC &mo LOWER &kp SPACE
+                                &ht_alt 0 ESC  &lt RAISE ENTER &paster      &caps_word  &lt NUMPAD TAB &lt LOWER SPACE
             >;
         };
 
