@@ -430,9 +430,9 @@ name: name##_mod_tap {                     \
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-          &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &thi   &UC_DE_OE &UC_DE_UE &trans
-&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &ver   &the   &you   &ing   &UC_DE_AE &kp BSPC
-&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &and_  &for_  &hat_  &eve   &hin      &UC_DE_SS 
+          &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &thi   &uc UC_DE_OE &uc UC_DE_UE &trans
+&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &ver   &the   &you   &ing   &uc UC_DE_AE &kp BSPC
+&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &and_  &for_  &hat_  &eve   &hin      &uc UC_DE_SS 
                                        &mo EXTRA_WASD &kp SPACE &kp LALT   &wasdt  &none  &none 
             >;
         };
