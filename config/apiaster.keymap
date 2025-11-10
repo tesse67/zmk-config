@@ -493,8 +493,8 @@ keymap {
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &key_repeat &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp M                   &kp X     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
-&copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT    &kp FSLH &kp F7
-                                &ht_alt 0 ENTER  &lt RAISE ESC &paster      &caps_word  &lt NUMPAD TAB &lt LOWER SPACE
+&paster   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT    &kp FSLH &kp F7
+                                &ht_alt 0 ENTER  &lt RAISE ESC &none             &caps_word  &lt NUMPAD TAB &lt LOWER SPACE
             >;
         };
 
@@ -543,7 +543,7 @@ keymap {
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
           &kp C_PREV &closer      &restorer  &searcher   &kp C_NEXT                 &kp PG_UP    &kp ENTER   &kp UP       &kp INS      &trans
-&trans    &lefter    &lefter       &closer   &righter    &trans                     &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
+&trans    &copyer    &lefter       &closer   &righter    &trans                     &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
 &trans    &trans     &trans       &trans     &trans      &trans                     &kp PG_DN    &kp ENTER   &trans       &trans       &kp C_PWR   &trans
                                             &trans       &trans    &trans           &trans       &trans      &kp TAB
             >;
