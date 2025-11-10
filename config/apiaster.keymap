@@ -355,7 +355,6 @@ name: name##_mod_tap {                     \
 
     };
 
-/ {
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -364,7 +363,6 @@ name: name##_mod_tap {                     \
             bindings = <&th_>;
         };
     };
-};
 
 keymap {
         compatible = "zmk,keymap";
