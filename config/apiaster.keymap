@@ -151,14 +151,14 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        star_: star_ {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-            = <&macro_tap_time 1>
-            , <&macro_tap &kp STAR &kp STAR &kp LEFT UP>
-            ;
-        };
+        /* starr_: starr_ { */
+          /* compatible = "zmk,behavior-macro"; */
+          /* #binding-cells = <0>; */
+          /* bindings */
+            /* = <&macro_tap_time 1> */
+            /* , <&macro_tap &kp STAR &kp STAR &kp LEFT UP> */
+            /* ; */
+        /* }; */
 
         quote_: quote_ {
           compatible = "zmk,behavior-macro";
@@ -469,11 +469,11 @@ name: name##_mod_tap {                     \
             key-positions = <10 11 49>;
             bindings = <&squote_>;
         };
-        combo_star {
-            timeout-ms = <50>;
-            key-positions = <17 18 49>;
-            bindings = <&star_>;
-        };
+        /* combo_star { */
+            /* timeout-ms = <50>; */
+            /* key-positions = <17 18 49>; */
+            /* bindings = <&starr_>; */
+        /* }; */
     };
 
 keymap {
