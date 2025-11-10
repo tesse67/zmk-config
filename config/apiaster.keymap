@@ -151,6 +151,33 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        quote_: quote_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp DQT &kp DQT &kp LEFT>
+            ;
+        };
+
+        squote_: squote_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp SQT &kp SQT &kp LEFT>
+            ;
+        };
+
+        assign_: assign_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp EQUAL &kp SPC>
+            ;
+        };
+
         you: you {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -415,8 +442,23 @@ name: name##_mod_tap {                     \
         };
         combo_bracket2 {
             timeout-ms = <50>;
-            key-positions = <34 35 36 49>;
+            key-positions = <34 36 49>;
             bindings = <&bracket2_>;
+        };
+        combo_quote {
+            timeout-ms = <50>;
+            key-positions = <21 22 49>;
+            bindings = <&quote_>;
+        };
+        combo_squote {
+            timeout-ms = <50>;
+            key-positions = <22 23 49>;
+            bindings = <&squote_>;
+        };
+        combo_assign {
+            timeout-ms = <50>;
+            key-positions = <10 11 49>;
+            bindings = <&squote_>;
         };
     };
 
