@@ -55,6 +55,10 @@ name: name##_mod_tap {                     \
     bindings = <macro>, <&kp>;             \
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Default to Linux input system
   minimum-length = <0>;            // Set to desired minimum input length
@@ -257,8 +261,8 @@ name: name##_mod_tap {                     \
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
 &kp ENTER &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
-&copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp TAB
-                                &lm QWERTY LALT  &mo RAISE &paster      &kp ESC    &mo LOWER &kp SPACE
+&copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp ESC
+                                &lm QWERTY LALT  &mo RAISE &paster      &caps_word  &mo LOWER &kp SPACE
             >;
         };
 
@@ -274,7 +278,7 @@ name: name##_mod_tap {                     \
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &kp ENTER &hl LSHFT C &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RALT SEMI &kp BSPC
-&kp TAB   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
+&kp ESC   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
                                 &lm QWERTY LALT  &mo RAISE &kp ESC          &kp ESC &mo LOWER &kp SPACE
             >;
         };
@@ -309,7 +313,7 @@ name: name##_mod_tap {                     \
           &kp C_PREV &closer      &restorer  &searcher   &kp C_NEXT                 &kp PG_UP    &kp ENTER   &kp UP       &kp INS      &trans
 &trans    &lefter    &lefter       &closer   &righter    &trans                     &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
 &trans    &trans     &trans       &trans     &trans      &trans                     &kp PG_DN    &kp ESC     &trans       &trans       &kp C_PWR   &trans
-                                            &trans       &trans    &trans           &trans       &trans      &mo NUMPAD 
+                                            &trans       &trans    &trans           &trans       &trans      &kp TAB
             >;
         };
       
