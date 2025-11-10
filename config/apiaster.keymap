@@ -124,6 +124,33 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        brace_: brace_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
+            ;
+        };
+
+        bracket_: bracket_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
+            ;
+        };
+
+        bracket2_: bracket2_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp LBKT &kp RBKT &kp LEFT &kp ENTER &kp UP>
+            ;
+        };
+
         you: you {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -375,6 +402,21 @@ name: name##_mod_tap {                     \
             timeout-ms = <50>;
             key-positions = <23 24 49>;
             bindings = <&parens_>;
+        };
+        combo_brace {
+            timeout-ms = <50>;
+            key-positions = <12 13 49>;
+            bindings = <&brace_>;
+        };
+        combo_bracket {
+            timeout-ms = <50>;
+            key-positions = <35 36 49>;
+            bindings = <&bracket_>;
+        };
+        combo_bracket2 {
+            timeout-ms = <50>;
+            key-positions = <34 35 36 49>;
+            bindings = <&bracket2_>;
         };
     };
 
