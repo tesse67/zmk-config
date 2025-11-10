@@ -277,7 +277,7 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
-&kp ENTER &hl LSHFT C &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RALT SEMI &kp BSPC
+&kp ENTER &hl LSHFT C &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RSHFT SEMI &kp BSPC
 &kp ESC   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
                                 &lm QWERTY LALT  &mo RAISE &kp ESC          &kp ESC &mo LOWER &kp SPACE
             >;
