@@ -451,7 +451,7 @@ name: name##_mod_tap {                     \
         };
         combo_bracket2 {
             timeout-ms = <50>;
-            key-positions = <34 36 49>;
+            key-positions = <35 36 48>;
             bindings = <&bracket2_>;
         };
         combo_quote {
