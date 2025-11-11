@@ -537,7 +537,7 @@ keymap {
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &kp ENTER &hl LSHFT A &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RSHFT SEMI &kp BSPC
 &kp ESC   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
-                                &ht_alt 0 ENTER  &lt RAISE ESC &none             &caps_word  &lt_repeat NUMPAD &lt LOWER SPACE
+                                &ht_alt 0 ENTER  &lt RAISE ESC &none             &caps_word  &lrep NUMPAD 0 &lt LOWER SPACE
             >;
         };
 
