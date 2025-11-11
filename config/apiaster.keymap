@@ -106,15 +106,6 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        th_: th_ {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-            = <&macro_tap_time 1>
-            , <&macro_tap &kp T &kp H>
-            ;
-        };
-
         parens_: parens_ {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
