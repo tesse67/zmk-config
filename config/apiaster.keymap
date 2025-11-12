@@ -77,8 +77,7 @@ name: name##_mod_tap {                     \
   win-compose-key = <RALT>;        // Overwrite WinCompose compose key
 };
 
-
-/ {    
+/ {
     macros {
         wasdt: wasd_type {
             compatible = "zmk,behavior-macro";
@@ -186,7 +185,16 @@ name: name##_mod_tap {                     \
           #binding-cells = <0>;
           bindings
             = <&macro_tap_time 1>
-            , <&macro_tap &kp EQUAL &kp SPC>
+            , <&macro_tap &kp EQUAL &kp COLON &kp SPC>
+            ;
+        };
+
+        uneq: uneq {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp EQUAL &kp EXCL &kp SPC>
             ;
         };
 
@@ -361,17 +369,6 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        aller: aller{
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-            = <&macro_tap_time 1>
-            , <&macro_press &kp LCTRL>
-            , <&macro_tap &kp A>
-            , <&macro_release &kp LCTRL>
-            ;
-        };
-
         searcher: searcher{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -528,11 +525,19 @@ name: name##_mod_tap {                     \
             key-positions = <22 23 49>;
             bindings = <&squote_>;
         };
+
         combo_assign {
             timeout-ms = <50>;
             key-positions = <10 11 49>;
-            bindings = <&squote_>;
+            bindings = <&assign_>;
         };
+
+        combo_uneq {
+            timeout-ms = <50>;
+            key-positions = <11 12 49>;
+            bindings = <&uneq>;
+        };
+
         /* combo_star { */
             /* timeout-ms = <50>; */
             /* key-positions = <17 18 49>; */
@@ -556,7 +561,7 @@ keymap {
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&hl LSHFT TAB &hl LSHFT C &kp  R    &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N         &kp E       &kp I    &hr RSHFT A &kp BSPC
+&hl GERMAN TAB &hl LSHFT C &kp  R    &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N         &kp E       &kp I    &hr RSHFT A &kp BSPC
 &sl LOWER &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                      &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl LOWER
                              &ht_alt 0 ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &kp SPACE 
             >;
