@@ -557,7 +557,7 @@ keymap {
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &hl LSHFT TAB &kp C &kp  R    &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N         &kp E       &kp I    &hr RSHFT A &kp BSPC
-&sl GERMAN &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                      &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl NUMPAD
+&sl GERMAN &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                      &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl LOWER
                              &ht_alt 0 ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &kp SPACE 
             >;
         };
