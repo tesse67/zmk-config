@@ -13,6 +13,7 @@
 #define WASD 4
 #define NUMPAD 4
 #define EXTRA_WASD 5
+#define GERMAN 6
 #define WASD_TYPE 6
 #define _____ &none
 
@@ -555,9 +556,9 @@ keymap {
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&kp TAB   &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp M                     &kp X     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
-&kp F6    &kp J     &kp V      &kp D       &kp G        &kp Q                        &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH    &kp F7
-                             &ht_alt 0 ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &lt LOWER SPACE
+&hl LSHFT TAB &kp C &kp  R    &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
+&mo GERMAN &ht_gui J 0 &kp V      &kp D       &kp G        &kp Q                      &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH    &kp F7
+                             &ht_alt 0 ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &lt LOWER SPACE 
             >;
         };
 
@@ -623,15 +624,15 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-          &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9    &kp F10
+       &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_SS &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9    &kp F10
 &kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9 &kp N0 &kp BSPC
-&none     &none      &none    &none    &none     &none                              &and_  &for_  &hat_  &eve   &hin      &uc UC_DE_SS 
+&none     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
                                        &mo EXTRA_WASD &kp SPACE &kp LALT   &wasdt  &none  &none 
             >;
         };
 
         extra_wasd_layer {
-            display-name = "WASD-gaming-extra";
+            display-name = "hchc";
 // ---------------------------------------------------
 //         |      |       |     |   Y  |  H   |     
 //         |      |       |     |      |  T   |           
@@ -647,7 +648,7 @@ keymap {
             >;
         };
         wasd_type_layer {
-            display-name = "WASD-typing_macro";
+            display-name = "german";
 // ---------------------------------------------------
 //         |      |       |     |   Y  |  H   |     
 //         |      |       |     |      |  T   |           
@@ -656,9 +657,9 @@ keymap {
 //                              |      |      |        |     
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
-&trans    &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans   &trans  
-&trans    &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans   &trans  
+          &trans     &trans   &trans   &trans   &trans                 &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_UE _____   
+&trans    &trans     &uc UC_DE_SS &trans   &trans   &trans             &trans    &uc UC_DE_SS  &uc UC_DE_UE &uc UC_DE_OE  &uc UC_DE_AE &trans  
+&trans    &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans                        &trans  
                                        &trans   &trans  &trans  &wasdt &trans    &trans
             >;
         };
