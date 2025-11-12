@@ -185,7 +185,7 @@ name: name##_mod_tap {                     \
           #binding-cells = <0>;
           bindings
             = <&macro_tap_time 1>
-            , <&macro_tap &kp EQUAL &kp COLON &kp SPC>
+            , <&macro_tap &kp COLON &kp EQUAL &kp SPC>
             ;
         };
 
