@@ -517,6 +517,16 @@ name: name##_mod_tap {                     \
             key-positions = <39 40>;
             bindings = <&home>;
         };
+        combo_lowerleft {
+            timeout-ms = <50>;
+            key-positions = <24 25>;
+            bindings = <&sl LOWER>;
+        };
+        combo_lowerright {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&sl LOWER>;
+        };
         combo_question {
             timeout-ms = <50>;
             key-positions = <40 41>;
@@ -555,7 +565,7 @@ name: name##_mod_tap {                     \
         combo_bracket2 {
             timeout-ms = <50>;
             key-positions = <35 36 48>;
-            bindings = <&bracket_>; //TODO why
+            bindings = <&bracket2_>; //TODO why
         };
         combo_quote {
             timeout-ms = <50>;
@@ -602,10 +612,10 @@ keymap {
 //&hr RCTRL N &hr RSHFT E &hr RGUI I
             bindings = <
               &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
-              &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&lt RAISE ESC &hl LSHFT C &kp  R    &kp S  &ht_ctl 0 T      &kp M                       &kp X     &kp N         &kp E     &kp I    &hr RSHFT A &kp BSPC 
-&sl GERMAN    &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl GERMAN
-                          &ht_alt 0 ENTER  &lt NUMPAD SPACE &key_repeat                 &caps_word  &lt LOWER B &kp SPACE 
+              &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z       &kp F       &kp O       &kp U    &kp SEMI
+&lt RAISE ESC &hl LSHFT C &kp  R    &kp S  &ht_ctl 0 T      &kp M                       &kp X       &kp N       &kp E     &kp I    &hr RSHFT A &kp BSPC 
+&sl GERMAN    &ht_gui 0 J &kp V    &kp D       &kp G        &th_                        &key_repeat &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl GERMAN
+                          &ht_alt 0 ENTER  &lt NUMPAD SPACE &kp Q                    &caps_word &kp B      &kp SPACE 
             >;
         };
 
