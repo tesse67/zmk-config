@@ -585,9 +585,9 @@ name: name##_mod_tap {                     \
             key-positions = <35 36 49>;
             bindings = <&bracket_>;
         };
-        combo_bracket2 {
+        combo_bracketer {
             timeout-ms = <50>;
-            key-positions = <35 36 48>;
+            key-positions = <35 36 44>;
             bindings = <&bracket2_>; //TODO why
         };
         combo_quote {
