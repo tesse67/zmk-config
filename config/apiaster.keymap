@@ -80,13 +80,6 @@ name: name##_mod_tap {                     \
 
 / {
     macros {
-        /* wasdt: wasd_type { */
-        /*     compatible = "zmk,behavior-macro"; */
-        /*     #binding-cells = <0>; */
-        /*     bindings */
-        /*         = <&macro_tap &tog WASD &tog WASD_TYPE>; */
-        /* }; */
-
         zed_em_kay: zed_em_kay {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -531,7 +524,7 @@ name: name##_mod_tap {                     \
         };
         combo_contro {
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <32 33>;
             bindings = <&sl CONTRO>;
         };
         combo_contro2 {
