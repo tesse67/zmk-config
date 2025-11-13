@@ -12,9 +12,10 @@
 #define RAISE 3
 #define WASD 4
 #define NUMPAD 4
-#define EXTRA_WASD 5
+/* #define EXTRA_WASD 5 */
+#define CONTRO 5
 #define GERMAN 6
-#define WASD_TYPE 6
+/* #define WASD_TYPE 6 */
 #define _____ &none
 
 
@@ -148,7 +149,7 @@ name: name##_mod_tap {                     \
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
-            = <&macro_tap_time 1>
+            = <&macro_tap_time 2>
             , <&macro_tap &kp LBKT &kp RBKT &kp LEFT &kp ENTER &kp UP>
             ;
         };
@@ -514,8 +515,18 @@ name: name##_mod_tap {                     \
         };
         combo_question {
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <40 41>;
             bindings = <&kp QMARK>;
+        };
+        combo_contro {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&sl CONTRO>;
+        };
+        combo_contro2 {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&sl CONTRO>;
         };
         combo_parens {
             timeout-ms = <50>;
@@ -535,7 +546,7 @@ name: name##_mod_tap {                     \
         combo_bracket2 {
             timeout-ms = <50>;
             key-positions = <35 36 48>;
-            bindings = <&bracket2_>;
+            bindings = <&bracket_>; //TODO why
         };
         combo_quote {
             timeout-ms = <50>;
@@ -584,8 +595,8 @@ keymap {
               &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
               &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &lt RAISE ESC &hl LSHFT C &kp  R    &kp S  &ht_ctl 0 T      &kp M                       &kp X     &kp N         &kp E     &kp I    &hr RSHFT A &kp BSPC 
-&sl LOWER     &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl LOWER
-                          &ht_alt 0 ENTER  &lt NUMPAD SPACE &kp SPACE               &caps_word  &lt LOWER B &kp SPACE 
+&sl GERMAN    &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl GERMAN
+                          &ht_alt 0 ENTER  &lt NUMPAD SPACE &key_repeat                 &caps_word  &lt LOWER B &kp SPACE 
             >;
         };
 
@@ -602,7 +613,7 @@ keymap {
               &kp Q      &kp W         &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &lt RAISE ESC &hl LSHFT A &kp S        &kp D       &hl LCTRL F &kp G                       &kp H     &kp J       &kp K       &kp L      &hr RSHFT SEMI &kp BSPC
 &sl LOWER     &kp Z       &kp X        &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp TAB
-                           &mt LALT ENTER  &lt NUMPAD SPACE &mo GERMAN                &caps_word &lt LOWER B &kp SPACE 
+                           &mt LALT ENTER  &lt NUMPAD SPACE &sl GERMAN                &caps_word &lt LOWER B &kp SPACE 
             >;
         };
 
@@ -633,8 +644,8 @@ _____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        _____         
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &aller     &cuter        _____      _____       _____                      &kp PG_UP    _____       &kp UP       &kp INS      &trans
-&trans    &copyer    &paster       &kp ENTER  &searcher   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
+          &aller     &cuter        &searcher  _____       _____                      &kp PG_UP    _____       &kp UP       &kp INS      &trans
+&trans    &copyer    &paster       &kp ENTER  &kp ESC     &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
 &trans    &aller     &copyer       &paster2   &kp SPACE   &kp C_VOL_DN                &kp PG_DN    &kp HOME       &trans      &kp END     _____   &trans
                                             &kp TAB      &trans    &trans           &trans       &kp TAB     &kp ENTER
             >;
@@ -659,7 +670,7 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
         };
 
         extra_wasd_layer {
-            display-name = "hchc";
+            display-name = "contro";
 // ---------------------------------------------------
 //         |      |       |     |   Y  |  H   |     
 //         |      |       |     |      |  T   |           
@@ -668,8 +679,8 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
 //                              |      |      |        |    
             bindings = <
           &trans     &trans   &trans   &kp Y    &kp H                  &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans   &trans   &kp T                  &trans    &trans  &trans  &trans  &trans  
-&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &trans  &trans  &trans  &trans   &trans  
+          &trans     &trans   &trans   &trans   &kp T                  &trans    &trans   &restorer &trans &trans  
+&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &trans   &trans  
 &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
                                        &trans   &trans  &trans  &trans &trans    &trans
             >;
@@ -684,10 +695,10 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
 //                              |      |      |        |     
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans   &trans   &trans                 &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_UE _____   
-&trans    &trans     &uc UC_DE_SS &trans   &trans   &trans             &trans    &uc UC_DE_SS  &uc UC_DE_UE &uc UC_DE_OE  &uc UC_DE_AE &trans  
-&trans    &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans                        &trans  
-                                       &trans   &trans  &trans  &wasdt &trans    &trans
+          &trans     &trans   &restorer &trans   &trans                 _____     &and_   &uc UC_DE_OE &uc UC_DE_UE _____   
+&trans    &trans     &lefter  &closer  &righter &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
+&trans    &trans     &trans   &trans   &trans   &trans                 &trans    &for_  &trans  &trans  &trans                        &trans  
+                                       &trans   &trans  &trans  &wasdt &trans    &uc UC_DE_SS
             >;
         };
 
