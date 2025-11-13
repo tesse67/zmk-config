@@ -80,12 +80,12 @@ name: name##_mod_tap {                     \
 
 / {
     macros {
-        wasdt: wasd_type {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &tog WASD &tog WASD_TYPE>;
-        };
+        /* wasdt: wasd_type { */
+        /*     compatible = "zmk,behavior-macro"; */
+        /*     #binding-cells = <0>; */
+        /*     bindings */
+        /*         = <&macro_tap &tog WASD &tog WASD_TYPE>; */
+        /* }; */
 
         zed_em_kay: zed_em_kay {
           compatible = "zmk,behavior-macro";
@@ -676,7 +676,7 @@ _____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        _____         
        &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_SS &kp F5                             &kp F6     &kp F7   &kp F8   &kp F11 &kp F12
 &kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9 &kp N0 &kp BSPC
 _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
-                                       _____     &kp SPACE &kp LALT   &wasdt  &none  &kp ENTER 
+                                       _____     &kp SPACE &kp LALT   _____  &none  &kp ENTER 
             >;
         };
 
@@ -709,7 +709,7 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
           &trans     &trans   &restorer &trans   &trans                 _____     &and_   &uc UC_DE_OE &uc UC_DE_UE _____   
 &trans    &trans     &lefter  &closer  &righter &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
 &trans    &trans     &trans   &trans   &trans   &trans                 &trans    &for_  &trans  &trans  &trans                        &trans  
-                                       &trans   &trans  &trans  &wasdt &trans    &uc UC_DE_SS
+                                       &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
             >;
         };
 
