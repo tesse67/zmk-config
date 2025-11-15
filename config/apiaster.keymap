@@ -618,7 +618,7 @@ name: name##_mod_tap {                     \
         combo_squotee {
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&kp SQT>;
+            bindings = <&kp F6>;
         };
 
         combo_assign {
@@ -654,11 +654,11 @@ keymap {
 //                                   | ALT  | RAISE | ESC |  | TODO |SPACE | LOWER  | 
 //&hr RCTRL N &hr RSHFT E &hr RGUI I
             bindings = <
-              &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
-              &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&lt RAISE ESC &hl LSHFT C &kp  R    &kp S  &ht_ctl 0 T      &kp M                       &kp X     &kp N       &kp E     &kp I    &hr RSHFT A  &kp BSPC 
-&sk LSHFT     &kp J      &kp V    &kp D       &kp G        &sl GERMAN                   &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sk LSHFT
-                         &ht_alt 0 ENTER  &lt NUMPAD SPACE &kp Q                        &caps_word &lt LOWER B  &kp SPACE 
+              &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
+              &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
+&lt RAISE ESC &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E     &kp I    &hr RSHFT A  &kp BSPC 
+&sk LSHFT     &kp J       &kp V      &kp D       &kp G       &sl GERMAN                  &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sk LSHFT
+                          &ht_alt 0 ENTER  &lt NUMPAD SPACE  &kp Q                       &caps_word &lt LOWER B  &kp SPACE 
             >;
         };
 
@@ -706,7 +706,7 @@ _____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        _____         
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &copyer    &cuter        &searcher  &deler     _____                     &kp PG_UP    _____       &kp UP       &kp INS      &trans
+          &copyer    &paster        &searcher  &deler     _____                     &kp PG_UP    _____       &kp UP       &kp INS      &trans
 &trans    &aller     &paster       &kp ENTER  &kp ESC   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
 &trans    &allcuter  &copyer       &paster2   &aller   &kp C_VOL_DN                 &kp PG_DN    &kp HOME       &trans      &kp END     _____   &trans
                                             &kp TAB      &allcuter &trans           &trans       &kp TAB     &kp ENTER
