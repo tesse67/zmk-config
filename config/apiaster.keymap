@@ -654,10 +654,10 @@ keymap {
 //                                   | ALT  | RAISE | ESC |  | TODO |SPACE | LOWER  | 
 //&hr RCTRL N &hr RSHFT E &hr RGUI I
             bindings = <
-              &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
+              &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9   &kp N0
               &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &lt RAISE ESC &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A  &kp BSPC 
-&kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &sl GERMAN &kp H      &kp Q       &kp DOT  &kp FSLH   &kp RSHFT
+&kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp COMMA &kp H       &kp Q       &kp DOT  &kp FSLH     &kp RSHFT
                           &ht_alt 0 ENTER  &lt NUMPAD SPACE  &kp Q                       &caps_word &sl LOWER  &kp SPACE 
             >;
         };
@@ -692,7 +692,7 @@ keymap {
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp LT    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
 _____    &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp COMMA              &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp BSPC
 _____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp SEMI               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
-                                                  &uc UC_DE_SS    _____ _____   &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE     
+                                                  &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
             >;
         };
 
