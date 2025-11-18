@@ -168,17 +168,17 @@ name: name##_mod_tap {                     \
             ;
         };
 
-      /* /\*  C-S-t *\/       */
-      /*   restorer: restorer{ */
-      /*     compatible = "zmk,behavior-macro"; */
-      /*     #binding-cells = <0>; */
-      /*     bindings */
-      /*       = <&macro_tap_time 1> */
-      /*       , <&macro_press &kp LCTRL LSHFT> */
-      /*       , <&macro_tap &kp T> */
-      /*       , <&macro_release &kp LCTRL LSHFT> */
-      /*       ; */
-      /*   }; */
+      /*  C-S-t */
+        restorer: restorer{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL &kp LSHFT>
+            , <&macro_tap &kp T>
+            , <&macro_release &kp LCTRL &kp LSHFT>
+            ;
+        };
 
     };
 
@@ -305,8 +305,8 @@ name: name##_mod_tap {                     \
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &kp C_PREV &closer      &kp C_PP     &searcher     &kp C_NEXT                   &kp PG_UP    &kp HOME     &kp UP       &kp END      &trans
-&trans    &lefter    &closer       &righter     &kp K_CMENU  &studio_unlock               &kp PG_UP    &kp LEFT     &kp DOWN     &kp RIGHT    &trans      &trans
+          &kp C_PREV &closer      &restorer     &searcher     &kp C_NEXT                   &kp PG_UP    &kp HOME     &kp UP       &kp END      &trans
+&trans    &lefter    &lefter       &closer     &righter  &studio_unlock               &kp PG_UP    &kp LEFT     &kp DOWN     &kp RIGHT    &trans      &trans
 &trans    &trans     &trans       &tog QWERTY  &to WASD     &bootloader                  &kp PG_DN    &trans       &trans       &trans       &kp C_PWR   &trans
                                                &trans       &trans         &trans &trans &trans       &trans 
             >;
