@@ -11,7 +11,8 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # revision: main
+      revision: v0.3
       import: app/west.yml
     - name: zmk-apiaster-module
       remote: munnich
@@ -21,8 +22,11 @@ manifest:
     #   remote: joelspadin
     #   revision: main
     #   import: config/west.yml      
-    - name: zmk-helpers
+    # - name: zmk-helpers
+      # remote: urob
+      # revision: main
+    - name: zmk-unicode
       remote: urob
-      revision: main
+      revision: v0.3 # set to same as ZMK version above
   self:
     path: config
