@@ -56,7 +56,7 @@ name: name##_mod_tap {                     \
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
 };
 
 &uc {
@@ -262,7 +262,7 @@ name: name##_mod_tap {                     \
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
 &kp ENTER &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp ESC
-                                &ht_alt 0 ESC  &mo RAISE &paster      &caps_word  &mo LOWER &kp SPACE
+                                &ht_alt 0 ESC  &mo RAISE &paster      &caps_word  &mo LOWER &lt LOWER SPACE
             >;
         };
 
