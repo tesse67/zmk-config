@@ -522,10 +522,15 @@ name: name##_mod_tap {                     \
             key-positions = <40 41>;
             bindings = <&kp QMARK>;
         };
-        combo_contro {
+        combo_voldn {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp C_VOL_DN>;
+        };
+        combo_volup {
             timeout-ms = <50>;
             key-positions = <33 34>;
-            bindings = <&sl CONTRO>;
+            bindings = <&kp C_VOL_UP>;
         };
         combo_contro2 {
             timeout-ms = <50>;
@@ -617,7 +622,7 @@ keymap {
               &kp Q      &kp W         &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &lt RAISE ESC &hl LSHFT A &kp S        &kp D       &hl LCTRL F &kp G                       &kp H     &kp J       &kp K       &kp L      &hr RSHFT SEMI &kp BSPC
 &sl LOWER     &kp Z       &kp X        &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp TAB
-                           &mt LALT ENTER  &lt NUMPAD SPACE &sl GERMAN                &caps_word &lt LOWER B &kp SPACE 
+                           &mt LALT ENTER  &lt NUMPAD SPACE &key_repeat               &caps_word &lt LOWER B &kp SPACE 
             >;
         };
 
@@ -649,7 +654,7 @@ _____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        _____         
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
           &copyer    &cuter        &searcher  _____       _____                     &kp PG_UP    _____       &kp UP       &kp INS      &trans
-&trans    &aller     &paster       &kp ENTER  &kp ESC     &kp C_VOL_UP              &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
+&trans    &aller     &paster       &kp ENTER  &kp ESC   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
 &trans    &allcuter  &copyer       &paster2   &aller   &kp C_VOL_DN                 &kp PG_DN    &kp HOME       &trans      &kp END     _____   &trans
                                             &kp TAB      &allcuter &trans           &trans       &kp TAB     &kp ENTER
             >;
