@@ -2,6 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/german.dtsi"
+
 #define BASE 0
 #define QWERTY 1
 #define LOWER 2
@@ -16,11 +19,6 @@
 #define THUMBS_R 47 48 49
 
 #define HRML(k1,k2,k3,k4) &ht_gui 0 k1  &ht_alt 0 k2  &qht LSHFT 0 k3  &ht_ctl 0 k4
-
-/* https://zmk.dev/docs/keymaps/list-of-keycodes */
-/* https://dlip.github.io/posts/hybrid-keyboard-chording-with-zmk/ */
-//https://github.com/benvallack/zmk-config-card/tree/master/config/boards/shields/card
-/* https://github.com/zmkfirmware/zmk/issues/1643 */
 
 #define QWERTY_MOD_MACRO(name, mod)            \
 name: name##_macro {                           \
@@ -126,7 +124,7 @@ name: name##_mod_tap {                     \
         compatible = "zmk,keymap";
 
         graphite_layer {
-            display-name = "graphite";
+            display-name = "main";
 // ------------------------------------------------------------------------------------------------------------
 //         |   1   |   2   |    3    |   4    |   5   |              |  6  |   7    |    8    |   9   |   0   |       
 //         |   W   |   L   |    Y    |   P    |   K   |              |  Z  |   X    |    O    |   U   |  TODO |        
@@ -138,9 +136,9 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
-&kp ENTER &hl LALT C &hl LGUI R &hl LSHFT S &ht_gui 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
+&kp ENTER &hl LALT C &ht_gui 0 R &hl LSHFT S &ht_gui 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
-                                &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &mo LOWER &kp SPACE
+                                &lm QWERTY LALT  &mo RAISE &kp ESC          &de_ae  &mo LOWER &kp SPACE
             >;
         };
 
@@ -155,8 +153,8 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
-&kp TAB   &hl LALT A &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RALT SEMI &kp ENTER
-&kp BSLH &kp Z      &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp SQT
+&kp ENTER &kp A      &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RALT SEMI &kp ENTER
+&kp TAB   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp SQT
                                 &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &kp LOWER &mo SPACE
             >;
         };
