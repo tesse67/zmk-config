@@ -14,6 +14,8 @@
 #define NUMPAD 4
 #define EXTRA_WASD 5
 #define WASD_TYPE 6
+#define _____ &none
+
 
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 35 36 37
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 38 39 40 41 42 43
@@ -268,6 +270,24 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        home: home {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp TILDE &kp FSLH>
+            ;
+        };
+
+        questionm: questionm {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp TILDE &kp FSLH>
+            ;
+        };
+
         hin: hin {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -303,6 +323,18 @@ name: name##_mod_tap {                     \
             , <&macro_press &kp LCTRL>
             , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        paster2: paster2{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp V>
+            , <&macro_release &kp LCTRL>
+            , <&macro_tap &kp ENTER>
             ;
         };
 
@@ -455,10 +487,15 @@ name: name##_mod_tap {                     \
 
     combos {
         compatible = "zmk,combos";
-        combo_th {
+        combo_home {
             timeout-ms = <50>;
             key-positions = <39 40>;
-            bindings = <&th_>;
+            bindings = <&home>;
+        };
+        combo_question {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp QMARK>;
         };
         combo_parens {
             timeout-ms = <50>;
@@ -518,9 +555,9 @@ keymap {
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&the      &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp M                     &kp X     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
-&ing      &kp J     &kp V      &kp D       &kp G       &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH    &and_
-                             &ht_alt 0 ENTER  &lt RAISE ESC &you               &caps_word    &lt NUMPAD B &lt LOWER SPACE
+&kp TAB   &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp M                     &kp X     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
+&kp F6    &kp J     &kp V      &kp D       &kp G        &kp Q                        &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH    &kp F7
+                             &ht_alt 0 ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &lt LOWER SPACE
             >;
         };
 
@@ -537,7 +574,7 @@ keymap {
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &kp ENTER &hl LSHFT A &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RSHFT SEMI &kp BSPC
 &kp ESC   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
-                             &ht_alt 0 ENTER  &lt RAISE ESC &you               &caps_word    &lt NUMPAD B &lt LOWER SPACE
+                             &ht_alt 0 ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &lt LOWER SPACE
             >;
         };
 
@@ -553,7 +590,7 @@ keymap {
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC       &kp N5                  &kp N6    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
 &kp F2  &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR &kp HASH                 &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp BSPC
-&kp F1 &kp PIPE     &kp AMPS    &kp LBKT        &kp RBKT        &kp HASH                 &kp LBKT  &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     &none
+&kp F1 &kp PIPE     &kp AMPS    &kp LBKT        &kp RBKT        &kp HASH                 &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     &none
                                                    &trans         &trans    &trans &trans &trans    &trans     
             >;
         };
@@ -568,9 +605,9 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &kp C_PREV &closer      &restorer  &searcher   &kp F7                     &kp PG_UP    &kp ENTER   &kp UP       &kp INS      &trans
-&trans    &copyer    &lefter       &closer   &righter    &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
-&trans    &aller     &copyer       &paster   &kp ENTER   &kp C_VOL_DN               &kp PG_DN    &none       &trans       &trans       &kp C_PWR   &trans
+          &kp C_PREV &closer      &restorer  &searcher   _____                      &kp PG_UP    _____       &kp UP       &kp INS      &trans
+&trans    _____      &lefter       &closer   &righter    &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
+&trans    _____      &copyer       &paster   &kp C_PLAY_PAUSE &kp C_VOL_DN          &kp PG_DN    _____       &trans       &trans       &kp C_PWR   &trans
                                             &trans       &trans    &trans           &trans       &kp TAB     &kp ENTER
             >;
         };
@@ -586,9 +623,9 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-          &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &thi   &uc UC_DE_OE &uc UC_DE_UE &trans
-&kp TAB   &kp N0     &kp N4   &kp N5   &kp N6    &kp F                             &ver   &the   &you   &ing   &uc UC_DE_AE &kp BSPC
-&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &and_  &for_  &hat_  &eve   &hin      &uc UC_DE_SS 
+          &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9    &kp F10
+&kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9 &kp N0 &kp BSPC
+&none     &none      &none    &none    &none     &none                              &and_  &for_  &hat_  &eve   &hin      &uc UC_DE_SS 
                                        &mo EXTRA_WASD &kp SPACE &kp LALT   &wasdt  &none  &none 
             >;
         };
