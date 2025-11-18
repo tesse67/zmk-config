@@ -147,7 +147,7 @@ name: name##_mod_tap {                     \
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
-            = <&macro_tap_time 10>
+            = <&macro_tap_time 100>
             , <&macro_tap &kp LBKT &kp RBKT &kp LEFT &kp ENTER &kp UP>
             ;
         };
@@ -749,7 +749,7 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
           &trans     &trans   &trans &trans   &trans                 _____     &and_   &uc UC_DE_OE &uc UC_DE_UE _____   
-&trans    &trans     &kp SQT  &kp MINUS &kp EXCL &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
+&trans    &kp DQT    &kp SQT  &kp MINUS &kp EXCL &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
 &trans    &trans     &trans   &trans   &trans   &trans                 &trans    &for_  &trans  &trans  &trans                        &trans  
                                        &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
             >;
