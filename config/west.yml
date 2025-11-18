@@ -15,5 +15,9 @@ manifest:
       remote: munnich
       revision: main
       import: config/west.yml
+    # - name: zmk-locales
+    #   remote: joelspadin
+    #   revision: main
+    #   import: config/west.yml      
   self:
     path: config
