@@ -274,7 +274,7 @@ name: name##_mod_tap {                     \
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &kp ENTER &hl LSHFT C &hl LGUI S &hl LSHFT D &hl LCTRL F &kp G                       &kp H     &hr RCTRL J &hr RSHFT K &hr RGUI L &hr RALT SEMI &kp BSPC
 &kp TAB   &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp TAB
-                                &lm QWERTY LALT  &mo RAISE &kp ESC          &kp BSPC &kp LOWER &kp SPACE
+                                &lm QWERTY LALT  &mo RAISE &kp ESC          &kp ESC &mo LOWER &kp SPACE
             >;
         };
 
@@ -305,16 +305,16 @@ name: name##_mod_tap {                     \
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &kp C_PREV &closer      &restorer     &searcher     &kp C_NEXT                   &kp PG_UP    &trans     &kp UP       &kp INS      &trans
-&trans    &lefter    &lefter       &closer     &righter  &studio_unlock               &kp PG_UP    &kp LEFT     &kp DOWN     &kp RIGHT    &trans      &trans
-&trans    &trans     &trans       &tog QWERTY  &to WASD     &bootloader                  &kp PG_DN    &trans       &trans       &trans       &kp C_PWR   &trans
-                                               &trans       &trans         &trans &trans &trans       &trans 
+          &kp C_PREV &closer      &restorer  &searcher   &kp C_NEXT                 &kp PG_UP    &kp ENTER   &kp UP       &kp INS      &trans
+&trans    &lefter    &lefter       &closer   &righter    &trans                     &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
+&trans    &trans     &trans       &trans     &trans      &trans                     &kp PG_DN    &ESC        &trans       &trans       &kp C_PWR   &trans
+                                            &trans       &trans         &trans &trans &trans       &mo numpad_layer 
             >;
         };
       
 
-        wasd_layer {
-            display-name = "WASD-gaming";
+        numpad_layer {
+            display-name = "numpad";
 // ------------------------------------------------------------------------------------------------------------
 //         | MUTE | VOL+   |  VOL-   | BRI+        |  BRI-  |                |  BT 0 | BT 1 |  BT 2 | BT 3 | BT 4     | 
 //         | PREV | REWIND | PAUSE   | FASTFORWARD |  NEXT  |                | PGUP  | HOME |   ^   | END  | BT CLEAR |       
@@ -322,10 +322,10 @@ name: name##_mod_tap {                     \
 // |       |      |        |         | QWERTY      |  boot  |                | boot  |      |       |      |  POWER   | reset |
 //                                   |             |        |      |  |      |       |      |
             bindings = <
-          &kp N1     &kp N2   &kp N3   &kp N4   &kp N5                             &none  &none  &none  &none  &none 
-          &kp N6     &kp Q    &kp W    &kp E    &kp R                             &none  &none  &none  &none  &none 
-&kp TAB   &kp LSHFT  &kp A    &kp S    &kp D    &kp F                             &none  &none  &none  &none  &none &none 
-&none     &kp LCTRL  &kp Z    &kp X    &kp C    &kp V                             &none  &none  &none  &none  &none &none 
+          &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
+          &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &none  &none  &none  &none 
+&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &none  &none  &none  &none  &none &none 
+&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &none  &none  &none  &none  &none &none 
                                        &mo EXTRA_WASD &kp SPACE &kp LALT   &wasdt  &none  &none 
             >;
         };
