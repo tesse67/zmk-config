@@ -396,7 +396,7 @@ name: name##_mod_tap {                     \
         lt_repeat: lt_repeat {
           compatible = "zmk,behavior-hold-tap";
           label = "LT_REPEAT";
-          #binding-cells = <2>;
+          #binding-cells = <1>;
           tapping-term-ms = <200>;
           flavor = "tap-preferred";
           bindings = <&mo>, <&key_repeat>;
