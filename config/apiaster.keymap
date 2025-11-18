@@ -74,6 +74,7 @@ name: name##_mod_tap {                     \
             bindings
                 = <&macro_tap &tog WASD &tog WASD_TYPE>;
         };
+
         zed_em_kay: zed_em_kay {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -82,6 +83,107 @@ name: name##_mod_tap {                     \
             , <&macro_press &kp LSHFT>
             , <&macro_tap &kp Z &kp M &kp K>
             , <&macro_release &kp LSHFT>
+            ;
+        };
+
+        sukusho: sukusho {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F10>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        the: the {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp T &kp H &kp E>
+            ;
+        };
+
+        you: you {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp Y &kp O &kp U>
+            ;
+        };
+
+        ing: ing {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp I &kp N &kp G>
+            ;
+        };
+
+        and_: and_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp A &kp N &kp D>
+            ;
+        };
+
+        hat_: hat_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp H &kp A &kp T>
+            ;
+        };
+
+        thi: thi {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp T &kp H &kp I>
+            ;
+        };
+
+        ver: ver {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp V &kp E &kp R>
+            ;
+        };
+
+        hin: hin {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp H &kp I &kp N>
+            ;
+        };
+
+        eve: eve {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp E &kp V &kp E>
+            ;
+        };
+
+        for_: for_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp F &kp O &kp R>
             ;
         };
 
@@ -260,9 +362,9 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
-&kp ENTER &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
-&copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp ESC
-                                &ht_alt 0 ESC  &lt RAISE ENTER &paster      &caps_word  &lt NUMPAD TAB &lt LOWER SPACE
+&kp TAB &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
+&copyer   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH &sukusho
+                                &ht_alt 0 ESC  &lt RAISE ENTER &paster      &caps_word  &lt NUMPAD key_repeat &lt LOWER SPACE
             >;
         };
 
@@ -328,9 +430,9 @@ name: name##_mod_tap {                     \
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-          &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &none  &none  &none  &none 
-&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &none  &none  &none  &none  &none &none 
-&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &none  &none  &none  &none  &none &none 
+          &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &thi   &trans &trans &trans
+&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &ver   &the   &you   &ing   &trans &hin
+&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &and_  &for_  &hat_  &eve   &none &none 
                                        &mo EXTRA_WASD &kp SPACE &kp LALT   &wasdt  &none  &none 
             >;
         };
