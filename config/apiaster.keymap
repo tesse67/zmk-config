@@ -749,7 +749,7 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
           &trans     &trans   &trans &trans   &trans                 _____     &and_   &uc UC_DE_OE &uc UC_DE_UE _____   
-&trans    &trans     &kp SQT  &kp MINUS &trans &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
+&trans    &trans     &kp SQT  &kp MINUS &kp EXCL &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
 &trans    &trans     &trans   &trans   &trans   &trans                 &trans    &for_  &trans  &trans  &trans                        &trans  
                                        &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
             >;
