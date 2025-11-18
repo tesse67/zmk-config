@@ -613,7 +613,7 @@ _____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        _____         
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp  C_BRI_DN                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
           &kp C_PREV &closer      &restorer  &searcher   _____                      &kp PG_UP    _____       &kp UP       &kp INS      &trans
 &trans    _____      &lefter       &closer   &righter    &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans      &trans
-&trans    _____      &copyer       &paster   &kp ENTER  &kp C_VOL_DN          &kp PG_DN    _____       &trans       &trans       &kp C_PWR   &trans
+&trans    _____      &copyer       &paster   &kp SPACE  &kp C_VOL_DN          &kp PG_DN    _____       &trans       &trans       &kp C_PWR   &trans
                                             &trans       &trans    &trans           &trans       &kp TAB     &kp ENTER
             >;
         };
