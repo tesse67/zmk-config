@@ -605,9 +605,10 @@ name: name##_mod_tap {                     \
             key-positions = <22 23 49>;
             bindings = <&squote_>;
         };
+
         combo_squotee {
             timeout-ms = <50>;
-            key-positions = <19 31>;
+            key-positions = <18 19>;
             bindings = <&kp SQT>;
         };
 
@@ -748,7 +749,7 @@ _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                         
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
           &trans     &trans   &restorer &trans   &trans                 _____     &and_   &uc UC_DE_OE &uc UC_DE_UE _____   
-&trans    &trans     &lefter  &closer  &righter &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
+&trans    &trans     &kp SQT  &closer  &righter &trans                 &trans    &the    &you    &ing    &uc UC_DE_AE &trans  
 &trans    &trans     &trans   &trans   &trans   &trans                 &trans    &for_  &trans  &trans  &trans                        &trans  
                                        &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
             >;
