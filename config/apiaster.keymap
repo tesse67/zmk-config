@@ -38,6 +38,11 @@ name: name##_macro {                           \
         , <&macro_release &mo QWERTY &kp mod>; \
 };
 
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+    /* /delete-property/ ignore-modifiers; */
+};
 
 ZMK_HOLD_TAP(lrep,
     flavor = "balanced";
@@ -142,7 +147,7 @@ name: name##_mod_tap {                     \
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
-            = <&macro_tap_time 2>
+            = <&macro_tap_time 10>
             , <&macro_tap &kp LBKT &kp RBKT &kp LEFT &kp ENTER &kp UP>
             ;
         };
@@ -602,7 +607,7 @@ name: name##_mod_tap {                     \
         };
         combo_squotee {
             timeout-ms = <50>;
-            key-positions = <22 23 44>;
+            key-positions = <19 31>;
             bindings = <&kp SQT>;
         };
 
