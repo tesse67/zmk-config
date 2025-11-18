@@ -542,6 +542,16 @@ name: name##_mod_tap {                     \
             key-positions = <33 34>;
             bindings = <&kp C_VOL_UP>;
         };
+        combo_uscore {
+            timeout-ms = <50>;
+            key-positions = <10 20>;
+            bindings = <&kp UNDER>;
+        };
+        combo_minus {
+            timeout-ms = <50>;
+            key-positions = <28 29 49>;
+            bindings = <&kp MINUS>;
+        };
         combo_contro2 {
             timeout-ms = <50>;
             key-positions = <10 11>;
