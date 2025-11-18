@@ -569,10 +569,15 @@ name: name##_mod_tap {                     \
             key-positions = <33 34>;
             bindings = <&kp C_VOL_UP>;
         };
-        combo_uscore {
+        // combo_uscore {
+        //     timeout-ms = <50>;
+        //     key-positions = <10 11>;
+        //     bindings = <&kp UNDER>;
+        // };
+        combo_tab {
             timeout-ms = <50>;
             key-positions = <10 20>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp TAB>;
         };
         combo_minus {
             timeout-ms = <50>;
@@ -690,7 +695,7 @@ keymap {
             bindings = <
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp LT    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
-&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp COMMA          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp BSPC
+&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp COMMA          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI DOT &hr RALT COLON &kp BSPC
 &kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp SEMI               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
                                                   &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
             >;
