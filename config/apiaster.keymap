@@ -524,12 +524,12 @@ name: name##_mod_tap {                     \
         };
         combo_contro {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
             bindings = <&sl CONTRO>;
         };
         combo_contro2 {
             timeout-ms = <50>;
-            key-positions = <11 12>;
+            key-positions = <10 11>;
             bindings = <&sl CONTRO>;
         };
         combo_parens {
