@@ -66,6 +66,15 @@ name: name##_mod_tap {                     \
   win-compose-key = <RALT>;        // Overwrite WinCompose compose key
 };
 
+
+ZMK_HOLD_TAP(lrep,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <80>;
+    require-prior-idle-ms = <200>;
+    bindings = <&mo>, <&key_repeat>;
+)
+
 / {    
     macros {
         wasdt: wasd_type {
@@ -442,16 +451,6 @@ name: name##_mod_tap {                     \
               , <&macro_release &mo MACRO_PLACEHOLDER>
               ;
           };
-
-        lt_repeat: lt_repeat {
-          compatible = "zmk,behavior-hold-tap";
-          label = "LT_REPEAT";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          /* flavor = "tap-preferred"; */
-          bindings = <&mo>, <&key_repeat>;
-        };
-
     };
 
     combos {
@@ -521,7 +520,7 @@ keymap {
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &th_      &hl LSHFT C &ht_gui 0 R &hl LSHFT S &ht_ctl 0 T &kp M                     &kp X     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &ing      &kp J     &kp V      &kp D       &kp G       &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH    &and_
-                             &ht_alt 0 ENTER  &lt RAISE ESC &none             &caps_word  &lt_repeat NUMPAD 0 &lt LOWER SPACE
+                             &ht_alt 0 ENTER  &lt RAISE ESC &none             &caps_word  &lrep NUMPAD 0 &lt LOWER SPACE
             >;
         };
 
