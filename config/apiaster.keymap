@@ -69,15 +69,15 @@ name: name##_mod_tap {                     \
             bindings
                 = <&macro_tap &tog WASD &tog WASD_TYPE>;
         };
-      zed_em_kay: zed_em_kay {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp LSHFT>
-        , <&macro_tap &kp Z &kp M &kp K>
-        , <&macro_release &kp LSHFT>
-        ;
-    };
+    /*   zed_em_kay: zed_em_kay { */
+    /*   compatible = "zmk,behavior-macro"; */
+    /*   #binding-cells = <0>; */
+    /*   bindings */
+    /*     = <&macro_press &kp LSHFT> */
+    /*     , <&macro_tap &kp Z &kp M &kp K> */
+    /*     , <&macro_release &kp LSHFT> */
+    /*     ; */
+    /* }; */
 
     };
 
@@ -157,7 +157,7 @@ name: name##_mod_tap {                     \
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp X       &kp O       &kp U    &kp SEMI
 &kp ENTER &hl LALT C &ht_gui 0 R &hl LSHFT S &ht_gui 0 T &kp B                       &kp F     &kp N       &kp E       &kp I    &hr RSHFT A &kp BSPC
 &kp TAB   &kp J      &kp V      &kp D       &kp G       &kp Q                       &kp M     &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp N1
-                                &ht_alt ESC &mo RAISE   &kp ESC                 &zed_em_kay  &mo LOWER   &kp SPACE
+                                &ht_alt ESC &mo RAISE   &kp ESC                 &kp BSPC  &mo LOWER   &kp SPACE
             >;
         };
 
