@@ -335,6 +335,17 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        aller: aller{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp A>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
         paster: paster{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
