@@ -106,6 +106,15 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        th_: th_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp T &kp H>
+            ;
+        };
+
         you: you {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -346,7 +355,18 @@ name: name##_mod_tap {                     \
 
     };
 
-    keymap {
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&th_>;
+        };
+    };
+};
+
+keymap {
         compatible = "zmk,keymap";
 
         graphite_layer {
