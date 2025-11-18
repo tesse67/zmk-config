@@ -431,8 +431,8 @@ name: name##_mod_tap {                     \
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
           &kp N6     &kp N1   &kp N2   &kp N3    &kp R                             &none  &thi   &trans &trans &trans
-&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &ver   &the   &you   &ing   &trans &hin
-&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &and_  &for_  &hat_  &eve   &none &none 
+&kp TAB   &kp LSHFT  &kp N4   &kp N5   &kp N6    &kp F                             &ver   &the   &you   &ing   &trans &kp BSPC
+&none     &kp LCTRL  &kp N7   &kp N8   &kp N9    &kp V                             &and_  &for_  &hat_  &eve   &hin &none 
                                        &mo EXTRA_WASD &kp SPACE &kp LALT   &wasdt  &none  &none 
             >;
         };
