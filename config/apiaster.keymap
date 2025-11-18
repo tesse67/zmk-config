@@ -690,8 +690,8 @@ keymap {
             bindings = <
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp LT    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
-_____    &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp COMMA              &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp BSPC
-_____    &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp SEMI               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
+&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp COMMA          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp BSPC
+&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp SEMI               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
                                                   &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
             >;
         };
