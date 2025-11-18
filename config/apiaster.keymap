@@ -151,6 +151,15 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        star_: star_ {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_tap &kp STAR &kp STAR &kp LEFT UP>
+            ;
+        };
+
         quote_: quote_ {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -460,6 +469,11 @@ name: name##_mod_tap {                     \
             key-positions = <10 11 49>;
             bindings = <&squote_>;
         };
+        combo_star {
+            timeout-ms = <50>;
+            key-positions = <17 18 49>;
+            bindings = <&star_>;
+        };
     };
 
 keymap {
@@ -513,7 +527,7 @@ keymap {
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC       &kp N5                  &kp N6    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
 &kp F2  &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR &kp HASH             &kp AT       &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI QMARK &hr RALT COLON &kp BSPC
-&kp F1 &kp PIPE     &kp AMPS    &kp RBKT        &kp LBRC       &kp HASH                &kp LBKT  &kp RBKT       &kp TILDE       &kp PRCNT   &kp SEMI     &none
+&kp F1 &kp PIPE     &kp AMPS    &kp LBKT        &kp RBKT        &kp HASH                &kp LBKT  &kp RBKT       &kp TILDE       &kp PRCNT   &kp SEMI     &none
                                                    &trans         &trans    &trans &trans &trans    &trans     
             >;
         };
