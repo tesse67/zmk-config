@@ -71,7 +71,7 @@
 //                                   | LOWER  | SPACE | ESC |  | DEL |BACK | RAISE  | 
             bindings = <
           &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
-          &kp B      &kp L      &kp D       &kp W       &kp Z                       &kp SQT     &kp F       &kp O       &kp U    &kp J
+          &kp L      &kp B      &kp D       &kp W       &kp Z                       &kp SQT     &kp F       &kp O       &kp U    &kp J
 &kp TAB   &hl LALT N &hl LGUI R &hl LSHFT T &hl LCTRL S &kp G                       &kp Y     &hr RCTRL H &hr RSHFT A &hr RGUI E &hr RALT I &kp ENTER
 &kp BSLH  &kp Q      &kp X      &kp M       &kp C       &kp V                       &kp K     &kp P       &kp DOT   &kp MINUS    &kp COMMA  &kp FSLH
                                             &mo LOWER   &kp SPACE &kp ESC &kp DEL &kp BSPC &mo RAISE
