@@ -563,7 +563,7 @@ keymap {
           &kp W      &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &to QWERTY  &hl LSHFT C &kp  R    &kp S  &ht_ctl 0 T &kp M                       &kp X     &kp N         &kp E       &kp I    &hr RSHFT A &kp BSPC
 &sl LOWER &ht_gui 0 J &kp V    &kp D       &kp G        &kp Q                       &kp B     &kp H       &kp COMMA   &kp DOT  &kp FSLH   &sl LOWER
-                             &ht_alt 0 ENTER  &lt RAISE ESC &paster2                &caps_word    &lt NUMPAD B &kp SPACE 
+                             &ht_alt 0 ENTER  &lt RAISE ESC &kp SPACE               &caps_word    &lt NUMPAD B &kp SPACE 
             >;
         };
 
@@ -580,7 +580,7 @@ keymap {
           &kp Q      &kp W      &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &to BASE  &hl LSHFT A &kp S &kp D  &hl LCTRL F &kp G                  &kp H     &kp J   &kp K      &kp L &hr RSHFT SEMI   &kp BSPC
 &sl LOWER &kp Z       &kp X      &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT   &kp FSLH      &kp TAB
-                           &mt LALT ENTER  &lt RAISE ESC &paster2               &caps_word    &lt NUMPAD B &kp SPACE 
+                           &mt LALT ENTER  &lt RAISE ESC &kp SPACE              &caps_word    &lt NUMPAD B &kp SPACE 
             >;
         };
 
