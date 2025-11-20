@@ -85,6 +85,119 @@ name: name##_mod_tap {                     \
 
 / {
     macros {
+
+        c-F1: c-F1{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F1>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F2: c-F2{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F2>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F3: c-F3{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F3>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F4: c-F4{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F4>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F5: c-F5{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F5>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F6: c-F6{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F6>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F7: c-F7{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F7>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F8: c-F8{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F8>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F9: c-F9{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F9>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+        c-F10: c-F10{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F10>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
+
+
         zed_em_kay: zed_em_kay {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -362,17 +475,6 @@ name: name##_mod_tap {                     \
             = <&macro_tap_time 1>
             , <&macro_press &kp LCTRL>
             , <&macro_tap &kp A &kp X>
-            , <&macro_release &kp LCTRL>
-            ;
-        };
-
-        paster: paster{
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-            = <&macro_tap_time 1>
-            , <&macro_press &kp LCTRL>
-            , <&macro_tap &kp V>
             , <&macro_release &kp LCTRL>
             ;
         };
@@ -729,10 +831,10 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-       &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_SS &kp F5                             &kp F6     &kp F7   &kp F8   &kp F11 &kp F12
-&kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9 &kp N0 &kp BSPC
+          &c-F1      &c-F2    &c-F3    &c-F4     &c-F5                              &c-F6     &c-F7     &c-F8    &c-F9   &c-F10
+&kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9  &kp N0 &kp BSPC
 _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
-                                       _____     &kp SPACE &kp LALT   _____  &none  &kp ENTER 
+                                       _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
             >;
         };
 
