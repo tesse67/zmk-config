@@ -195,7 +195,27 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        cF11: cF11{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F11>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
 
+        cF12: cF12{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp F12>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
 
         zed_em_kay: zed_em_kay {
           compatible = "zmk,behavior-macro";
@@ -841,9 +861,9 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-          &cF1      &cF2    &cF3    &cF4     &cF5                              &cF6     &cF7     &cF8    &cF9   &cF10
-&kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9  &kp N0 &kp BSPC
-_____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
+          &cF1       &cF2     &cF3     &cF4      &cF5                               &cF6       &cF7     &cF8     &cF9    &cF10
+&cF11     &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9  &kp N0 &kp BSPC
+&cF12     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
                                        _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
             >;
         };
