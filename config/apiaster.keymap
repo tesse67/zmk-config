@@ -85,8 +85,7 @@ name: name##_mod_tap {                     \
 
 / {
     macros {
-
-        c-F1: c-F1{
+        cF1: cF1{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -97,7 +96,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F2: c-F2{
+        cF2: cF2{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -108,7 +107,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F3: c-F3{
+        cF3: cF3{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -119,7 +118,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F4: c-F4{
+        cF4: cF4{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -130,7 +129,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F5: c-F5{
+        cF5: cF5{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -141,7 +140,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F6: c-F6{
+        cF6: cF6{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -152,7 +151,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F7: c-F7{
+        cF7: cF7{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -163,7 +162,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F8: c-F8{
+        cF8: cF8{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -174,7 +173,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F9: c-F9{
+        cF9: cF9{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -185,7 +184,7 @@ name: name##_mod_tap {                     \
             ;
         };
 
-        c-F10: c-F10{
+        cF10: cF10{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -813,9 +812,9 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &bootloader           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &copyer    &paster        &searcher  &deler     _____                     &kp PG_UP    _____       &kp UP       &kp INS      &trans
+          &copyer    &paster        &searcher  &deler     _____                     &kp PG_UP   &copyer      &kp UP       &kp INS      &paster
 &trans    &aller     &paster       &kp ENTER  &kp ESC   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
-&trans    &allcuter  &copyer       &paster2   &aller   &kp C_VOL_DN                 &kp PG_DN    &kp HOME       &trans      &kp END     _____   &trans
+&trans    &allcuter  &copyer       &paster2   &aller   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
                                             &kp ENTER  &allcuter &trans           &trans       &kp TAB     &kp ENTER
             >;
         };
@@ -831,7 +830,7 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
-          &c-F1      &c-F2    &c-F3    &c-F4     &c-F5                              &c-F6     &c-F7     &c-F8    &c-F9   &c-F10
+          &cF1      &cF2    &cF3    &cF4     &cF5                              &cF6     &cF7     &cF8    &cF9   &cF10
 &kp TAB   &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9  &kp N0 &kp BSPC
 _____     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
                                        _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
