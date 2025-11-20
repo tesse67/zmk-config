@@ -490,6 +490,17 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        paster: paster{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp V>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
         copyer: copyer{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
