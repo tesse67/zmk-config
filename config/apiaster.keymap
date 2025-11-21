@@ -711,6 +711,26 @@ name: name##_mod_tap {                     \
             key-positions = <10 20>;
             bindings = <&copyer>;
         };
+        combo_pastee {
+            timeout-ms = <50>;
+            key-positions = <11 20>;
+            bindings = <&paster>;
+        };
+        combo_tabber {
+            timeout-ms = <50>;
+            key-positions = <20 24>;
+            bindings = <&kp TAB>;
+        };
+        combo_paster2 {
+            timeout-ms = <50>;
+            key-positions = <20 33>;
+            bindings = <&paster2>;
+        };
+        combo_searcher {
+            timeout-ms = <50>;
+            key-positions = <13 20>;
+            bindings = <&searcher>;
+        };
         combo_minus {
             timeout-ms = <50>;
             key-positions = <28 29 49>;
