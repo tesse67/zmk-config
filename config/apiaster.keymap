@@ -706,11 +706,11 @@ name: name##_mod_tap {                     \
         //     key-positions = <10 11>;
         //     bindings = <&kp UNDER>;
         // };
-        // combo_tab {
-        //     timeout-ms = <50>;
-        //     key-positions = <10 20>;
-        //     bindings = <&kp TAB>;
-        // };
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <10 20>;
+            bindings = <&copyer>;
+        };
         combo_minus {
             timeout-ms = <50>;
             key-positions = <28 29 49>;
