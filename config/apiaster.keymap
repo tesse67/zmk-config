@@ -722,12 +722,12 @@ name: name##_mod_tap {                     \
         // };
         combo_copy {
             timeout-ms = <50>;
-            key-positions = <10 20>;
+            key-positions = <20 23>;
             bindings = <&copyer>;
         };
         combo_pastee {
             timeout-ms = <50>;
-            key-positions = <11 20>;
+            key-positions = <20 33>;
             bindings = <&paster>;
         };
         combo_tabber {
@@ -878,8 +878,8 @@ keymap {
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &bootloader           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
           &copyer    &paster       &deler     &searcher       _____                     &kp PG_UP   &copyer      &kp UP       &kp INS      &paster
-&trans    &aller     &copyer       &paster    &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
-&trans    &allcuter  &copyer       &paster2   &aller   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
+&trans    &aller     &copyer       &copyer    &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
+&trans    &allcuter  &copyer       &paster    &allcutter   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
                                             &kp ENTER  &allcuter &trans           &trans       &kp TAB     &kp ENTER
             >;
         };
