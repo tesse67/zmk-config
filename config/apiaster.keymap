@@ -879,7 +879,7 @@ keymap {
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &bootloader           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
           &copyer    &paster       &deler     &searcher       _____                     &kp PG_UP   &copyer      &kp UP       &kp INS      &paster
 &trans    &aller     &copyer       &copyer    &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
-&trans    &allcuter  &copyer       &paster    &allcutter   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
+&trans    &allcuter  &copyer       &paster    &allcuter   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
                                             &kp ENTER  &allcuter &trans           &trans       &kp TAB     &kp ENTER
             >;
         };
