@@ -606,6 +606,20 @@ name: name##_mod_tap {                     \
         HOME_ROW_MOD_TAP(ht_gui, &qgui)
         HOME_ROW_MOD_TAP(ht_ctl, &qctl)
 
+        altcopy: alt_copy {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lt RAISE ESC>, <&copyer>;
+            mods = <(MOD_LALT)>;
+        };
+
+        altpaste: alt_paste {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&paster>;
+            mods = <(MOD_LALT)>;
+        };
+
         hl: home_row_hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -813,8 +827,8 @@ keymap {
             bindings = <
               &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9   &kp N0
               &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&lt RAISE ESC &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A  &kp BSPC 
-&kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp RSHFT
+&altcopy      &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A  &kp BSPC 
+&altpaste     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp RSHFT
                           &ht_alt 0 ENTER  &lt NUMPAD SPACE  &paster2                    &caps_word &sl LOWER  &kp SPACE 
             >;
         };
@@ -864,7 +878,7 @@ keymap {
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &bootloader           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
           &copyer    &paster       &deler     &searcher       _____                     &kp PG_UP   &copyer      &kp UP       &kp INS      &paster
-&trans    &aller     &paster       &kp ENTER  &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
+&trans    &aller     &copyer       &paster    &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
 &trans    &allcuter  &copyer       &paster2   &aller   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
                                             &kp ENTER  &allcuter &trans           &trans       &kp TAB     &kp ENTER
             >;
