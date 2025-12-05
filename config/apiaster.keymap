@@ -345,6 +345,17 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        qj: qj {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp Q &kp J>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
         you: you {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -1006,8 +1017,8 @@ keymap {
 //                              |      |      |        |     
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans &trans   &trans                 _____     _____   _____ _____ _____   
-&trans    &https     &https   &https   &https   &trans                 _____ &https _____ _____ _____ _____  
+          &trans     &trans   &trans   &trans   &trans                 _____     _____   _____ _____ _____   
+&trans    &https     &https   &qj      &https   &trans                 _____ &https _____ _____ _____ _____  
 &trans    &trans     &trans   &trans   &trans   &trans                 _____    _____  _____  _____  _____                        &trans  
                                        &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
             >;
