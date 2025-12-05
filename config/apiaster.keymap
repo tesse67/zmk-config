@@ -1007,7 +1007,7 @@ keymap {
             bindings = <
           &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
           &trans     &trans   &trans &trans   &trans                 _____     _____   _____ _____ _____   
-&trans    &kp DQT    &kp SQT  &kp MINUS &kp EXCL &trans                 _____ &https _____ _____ _____ _____  
+&trans    &https     &https   &https   &https   &trans                 _____ &https _____ _____ _____ _____  
 &trans    &trans     &trans   &trans   &trans   &trans                 _____    _____  _____  _____  _____                        &trans  
                                        &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
             >;
