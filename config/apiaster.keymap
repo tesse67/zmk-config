@@ -24,6 +24,14 @@
 #define THUMBS_L 44 45 46
 #define THUMBS_R 47 48 49
 
+
+//     0  1  2  3  4 |  5  6  7  8  9 
+//    10 11 12 13 14 | 15 16 17 18 19
+// 20 21 22 23 24 25 | 26 27 28 29 30 31
+// 32 33 34 35 36 37 | 38 39 40 41 42 43
+//          44 45 46 | 47 48 49 
+
+
 #define HRML(k1,k2,k3,k4) &ht_gui 0 k1  &ht_alt 0 k2  &qht LSHFT 0 k3  &ht_ctl 0 k4
 
 #define QWERTY_MOD_MACRO(name, mod)            \
@@ -532,6 +540,17 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        allcopyer: allcopyer{
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&macro_tap_time 1>
+            , <&macro_press &kp LCTRL>
+            , <&macro_tap &kp A &kp C>
+            , <&macro_release &kp LCTRL>
+            ;
+        };
+
         cutter: cutter{
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -725,6 +744,13 @@ name: name##_mod_tap {                     \
             key-positions = <20 23>;
             bindings = <&copyer>;
         };
+
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <20 23>;
+            bindings = <&copyer>;
+        };
+
         combo_pastee {
             timeout-ms = <50>;
             key-positions = <20 33>;
@@ -740,10 +766,53 @@ name: name##_mod_tap {                     \
         //     key-positions = <20 33>;
         //     bindings = <&paster2>;
         // };
+        
+        combo_left_shift {
+          timeout-ms = <50>;
+          key-positions = <24 37>;
+          bindings = <&kp LSHFT>;
+        };
+
+        combo_right_shift {
+          timeout-ms = <50>;
+          key-positions = <26 39>;
+          bindings = <&kp RSHFT>;
+        };
+
+        combo_dir_left {
+          timeout-ms = <50>;
+          key-positions = <24 25>;
+          bindings = <&kp LEFT>;
+        };
+
+        combo_dir_right {
+          timeout-ms = <50>;
+          key-positions = <26 27>;
+          bindings = <&kp RIGHT>;
+        };
+
+        combo_dir_up {
+          timeout-ms = <50>;
+          key-positions = <16 26>;
+          bindings = <&kp UP>;
+        };
+
+        combo_dir_down {
+          timeout-ms = <50>;
+          key-positions = <13 25>;
+          bindings = <&kp DOWN>;
+        };
+
+        combo_dir_german {
+          timeout-ms = <50>;
+          key-positions = <13 14>;
+          bindings = <&sl GERMAN>;
+        };
+
         combo_searcher {
-            timeout-ms = <50>;
-            key-positions = <13 20>;
-            bindings = <&searcher>;
+          timeout-ms = <50>;
+          key-positions = <13 20>;
+          bindings = <&searcher>;
         };
         combo_minus {
             timeout-ms = <50>;
@@ -860,9 +929,9 @@ keymap {
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
-         &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp LT    &kp CARET      &kp PLUS        &kp DLLR     &kp STAR
-&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp COMMA          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI DOT &hr RALT COLON &kp BSPC
-&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp SEMI               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
+         &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
+&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp GT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
+&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp LT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
                                                   &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
             >;
         };
@@ -912,10 +981,10 @@ keymap {
 //                              |      |      |        |    
             bindings = <
           &trans     &trans   &trans   &kp Y    &kp H                  &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans   &trans   &kp T                  &trans    &trans   &restorer &trans &trans  
-&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &trans   &trans  
+          &trans     &trans   &trans   &trans   &kp T                  &trans    &uc UC_DE_OE &restorer &uc UC_DE_UE &trans  
+&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &uc UC_DE_AE   &trans  
 &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
-                                       &trans   &trans  &trans  &trans &trans    &trans
+                                       &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
             >;
         };
         wasd_type_layer {
