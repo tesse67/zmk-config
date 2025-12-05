@@ -745,12 +745,6 @@ name: name##_mod_tap {                     \
             bindings = <&copyer>;
         };
 
-        combo_copy {
-            timeout-ms = <50>;
-            key-positions = <20 23>;
-            bindings = <&copyer>;
-        };
-
         combo_pastee {
             timeout-ms = <50>;
             key-positions = <20 33>;
