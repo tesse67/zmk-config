@@ -906,7 +906,7 @@ keymap {
               &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9   &kp N0
               &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &lt RAISE ESC &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A  &kp BSPC 
-&paster       &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp LC(BSPC)
+&copyer       &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp LC(BSPC)
                           &ht_alt 0 ENTER  &lt NUMPAD SPACE  &paster2                    &caps_word &sl LOWER  &kp SPACE 
             >;
         };
@@ -941,7 +941,7 @@ keymap {
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
 &uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
 &kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
-                                                  &uc UC_DE_AE &uc UC_DE_UE &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
+                                                  &kp BSLH      &kp PRCNT &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
             >;
         };
 
