@@ -809,7 +809,7 @@ name: name##_mod_tap {                     \
         combo_dir_shift_alt {
           timeout-ms = <50>;
           key-positions = <13 14>;
-          bindings = <&mo LS(LALT)>;
+          bindings = <&kp LS(LALT)>;
         };
 
         combo_dir_german {
