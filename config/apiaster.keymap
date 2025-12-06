@@ -781,27 +781,27 @@ name: name##_mod_tap {                     \
         //     bindings = <&paster2>;
         // };
         
-        combo_left_shift {
-          timeout-ms = <66>;
-          key-positions = <24 37>;
-          bindings = <&copyer>;
-        };
+        /* combo_left_shift { */
+        /*   timeout-ms = <66>; */
+        /*   key-positions = <24 37>; */
+        /*   bindings = <&copyer>; */
+        /* }; */
 
-        combo_right_shift {
-          timeout-ms = <66>;
-          key-positions = <27 38>;
-          bindings = <&kp LC(BSPC)>;
-        };
+        /* combo_right_shift { */
+        /*   timeout-ms = <66>; */
+        /*   key-positions = <27 38>; */
+        /*   bindings = <&kp LC(BSPC)>; */
+        /* }; */
 
         combo_dir_left {
           timeout-ms = <66>;
-          key-positions = <24 25>;
+          key-positions = <24 37>;
           bindings = <&kp LEFT>;
         };
 
         combo_dir_right {
           timeout-ms = <66>;
-          key-positions = <26 27>;
+          key-positions = <27 38>;
           bindings = <&kp RIGHT>;
         };
 
