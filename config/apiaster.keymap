@@ -1011,13 +1011,13 @@ keymap {
         };
 
         main2_layer {
-            display-name = "main2";
+            display-name = "contro";
             bindings = <
-              &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9   &kp N0
-              &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&lt RAISE ESC &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A  &kp BSPC 
-&kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp RSHFT
-                          &ht_alt 0 ENTER  &lt NUMPAD SPACE  &paster2                    &caps_word &sl LOWER  &kp SPACE 
+          &trans     &trans   &trans   &kp Y    &kp H                  &trans    &trans  &trans  &trans  &trans  
+          &trans     &trans   &trans   &trans   &kp T                  &trans    &uc UC_DE_OE &restorer &uc UC_DE_UE &trans  
+&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &uc UC_DE_AE   &trans  
+&trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
+                                       &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
             >;
         };
         wasd_type_layer {
