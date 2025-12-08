@@ -1,5 +1,5 @@
 // inx 24999
-stenocombo_endings: endings {
+stenocombo_endings: stenocombo_endings {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -8,7 +8,7 @@ stenocombo_endings: endings {
     ;
 };
 // inx 25001
-stenocombo_end: end {
+stenocombo_end: stenocombo_end {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -18,7 +18,7 @@ stenocombo_end: end {
 };
 //end(duplicate) inx 25003
 // inx 25004
-stenocombo_ends: ends {
+stenocombo_ends: stenocombo_ends {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -28,7 +28,7 @@ stenocombo_ends: ends {
 };
 //empty(duplicate) inx 25006
 // inx 25007
-stenocombo_especially: especially {
+stenocombo_especially: stenocombo_especially {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -39,7 +39,7 @@ stenocombo_especially: especially {
 //end(duplicate) inx 25008
 //ends(duplicate) inx 25009
 // inx 25010
-stenocombo_ebb: ebb {
+stenocombo_ebb: stenocombo_ebb {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -48,7 +48,7 @@ stenocombo_ebb: ebb {
     ;
 };
 // inx 25012
-stenocombo_El: El {
+stenocombo_El: stenocombo_El {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -59,7 +59,7 @@ stenocombo_El: El {
 //exactly(duplicate) inx 25013
 //educational(duplicate) inx 25014
 // inx 25016
-stenocombo_else: else {
+stenocombo_else: stenocombo_else {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -68,7 +68,7 @@ stenocombo_else: else {
     ;
 };
 // inx 25018
-stenocombo_egg: egg {
+stenocombo_egg: stenocombo_egg {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -78,7 +78,7 @@ stenocombo_egg: egg {
 };
 //educate(duplicate) inx 25019
 // inx 25021
-stenocombo_editing: editing {
+stenocombo_editing: stenocombo_editing {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -87,7 +87,7 @@ stenocombo_editing: editing {
     ;
 };
 // inx 25022
-stenocombo_eggs: eggs {
+stenocombo_eggs: stenocombo_eggs {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -96,7 +96,7 @@ stenocombo_eggs: eggs {
     ;
 };
 // inx 25026
-stenocombo_edit: edit {
+stenocombo_edit: stenocombo_edit {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -106,7 +106,7 @@ stenocombo_edit: edit {
 };
 //edit(duplicate) inx 25027
 // inx 25029
-stenocombo_Ed: Ed {
+stenocombo_Ed: stenocombo_Ed {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -115,7 +115,7 @@ stenocombo_Ed: Ed {
     ;
 };
 // inx 25030
-stenocombo_easy: easy {
+stenocombo_easy: stenocombo_easy {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -124,7 +124,7 @@ stenocombo_easy: easy {
     ;
 };
 // inx 25031
-stenocombo_you: you {
+stenocombo_you: stenocombo_you {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -135,7 +135,7 @@ stenocombo_you: you {
 //understand(duplicate) inx 25034
 //much(duplicate) inx 25035
 // inx 25040
-stenocombo_USB: USB {
+stenocombo_USB: stenocombo_USB {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -144,7 +144,7 @@ stenocombo_USB: USB {
     ;
 };
 // inx 25041
-stenocombo_usk: usk {
+stenocombo_usk: stenocombo_usk {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -154,7 +154,7 @@ stenocombo_usk: usk {
 };
 //unfortunately(duplicate) inx 25042
 // inx 25046
-stenocombo_urn: urn {
+stenocombo_urn: stenocombo_urn {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -163,7 +163,7 @@ stenocombo_urn: urn {
     ;
 };
 // inx 25047
-stenocombo_urge: urge {
+stenocombo_urge: stenocombo_urge {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -172,7 +172,7 @@ stenocombo_urge: urge {
     ;
 };
 // inx 25048
-stenocombo_urgent: urgent {
+stenocombo_urgent: stenocombo_urgent {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -181,7 +181,7 @@ stenocombo_urgent: urgent {
     ;
 };
 // inx 25049
-stenocombo_urges: urges {
+stenocombo_urges: stenocombo_urges {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -190,7 +190,7 @@ stenocombo_urges: urges {
     ;
 };
 // inx 25050
-stenocombo_urged: urged {
+stenocombo_urged: stenocombo_urged {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -199,7 +199,7 @@ stenocombo_urged: urged {
     ;
 };
 // inx 25051
-stenocombo_understanding: understanding {
+stenocombo_understanding: stenocombo_understanding {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -210,7 +210,7 @@ stenocombo_understanding: understanding {
 //understanding(duplicate) inx 25052
 //understand(duplicate) inx 25054
 // inx 25055
-stenocombo_urns: urns {
+stenocombo_urns: stenocombo_urns {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -220,7 +220,7 @@ stenocombo_urns: urns {
 };
 //understand(duplicate) inx 25056
 // inx 25057
-stenocombo_understands: understands {
+stenocombo_understands: stenocombo_understands {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -233,7 +233,7 @@ stenocombo_understands: understands {
 //understanding(duplicate) inx 25064
 //understands(duplicate) inx 25066
 // inx 25067
-stenocombo_URL: URL {
+stenocombo_URL: stenocombo_URL {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -242,7 +242,7 @@ stenocombo_URL: URL {
     ;
 };
 // inx 25070
-stenocombo_ultrasound: ultrasound {
+stenocombo_ultrasound: stenocombo_ultrasound {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -254,7 +254,7 @@ stenocombo_ultrasound: ultrasound {
 //yours(duplicate) inx 25073
 //up(duplicate) inx 25074
 // inx 25076
-stenocombo_unless: unless {
+stenocombo_unless: stenocombo_unless {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -263,7 +263,7 @@ stenocombo_unless: unless {
     ;
 };
 // inx 25078
-stenocombo_unction: unction {
+stenocombo_unction: stenocombo_unction {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -272,7 +272,7 @@ stenocombo_unction: unction {
     ;
 };
 // inx 25079
-stenocombo_underground: underground {
+stenocombo_underground: stenocombo_underground {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -282,7 +282,7 @@ stenocombo_underground: underground {
 };
 //understand(duplicate) inx 25082
 // inx 25085
-stenocombo_um: um {
+stenocombo_um: stenocombo_um {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -291,7 +291,7 @@ stenocombo_um: um {
     ;
 };
 // inx 25086
-stenocombo_ultimate: ultimate {
+stenocombo_ultimate: stenocombo_ultimate {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -300,7 +300,7 @@ stenocombo_ultimate: ultimate {
     ;
 };
 // inx 25087
-stenocombo_upload: upload {
+stenocombo_upload: stenocombo_upload {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -309,7 +309,7 @@ stenocombo_upload: upload {
     ;
 };
 // inx 25088
-stenocombo_upping: upping {
+stenocombo_upping: stenocombo_upping {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -318,7 +318,7 @@ stenocombo_upping: upping {
     ;
 };
 // inx 25089
-stenocombo_upgrade: upgrade {
+stenocombo_upgrade: stenocombo_upgrade {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -327,7 +327,7 @@ stenocombo_upgrade: upgrade {
     ;
 };
 // inx 25092
-stenocombo_ups: ups {
+stenocombo_ups: stenocombo_ups {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -336,7 +336,7 @@ stenocombo_ups: ups {
     ;
 };
 // inx 25093
-stenocombo_upside: upside {
+stenocombo_upside: stenocombo_upside {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -345,7 +345,7 @@ stenocombo_upside: upside {
     ;
 };
 // inx 25099
-stenocombo_UX: UX {
+stenocombo_UX: stenocombo_UX {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -354,7 +354,7 @@ stenocombo_UX: UX {
     ;
 };
 // inx 25105
-stenocombo_ugly: ugly {
+stenocombo_ugly: stenocombo_ugly {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -363,7 +363,7 @@ stenocombo_ugly: ugly {
     ;
 };
 // inx 25108
-stenocombo_ugh: ugh {
+stenocombo_ugh: stenocombo_ugh {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -372,7 +372,7 @@ stenocombo_ugh: ugh {
     ;
 };
 // inx 25109
-stenocombo_us: us {
+stenocombo_us: stenocombo_us {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
@@ -381,7 +381,7 @@ stenocombo_us: us {
     ;
 };
 // inx 25110
-stenocombo_ut: ut {
+stenocombo_ut: stenocombo_ut {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
