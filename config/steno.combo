@@ -1,12 +1,3 @@
-// inx 24999
-stenocombo_endings: stenocombo_endings {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-    = <&macro_tap_time 1>
-    , <&macro_tap &kp E &kp N &kp D &kp I &kp N &kp G &kp S>
-    ;
-};
 // inx 25001
 stenocombo_end: stenocombo_end {
     compatible = "zmk,behavior-macro";
@@ -26,7 +17,15 @@ stenocombo_ends: stenocombo_ends {
     , <&macro_tap &kp E &kp N &kp D &kp S>
     ;
 };
-//empty(duplicate) inx 25006
+// inx 25006
+stenocombo_empty: stenocombo_empty {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp M &kp P &kp T &kp Y>
+    ;
+};
 // inx 25007
 stenocombo_especially: stenocombo_especially {
     compatible = "zmk,behavior-macro";
@@ -56,8 +55,24 @@ stenocombo_El: stenocombo_El {
     , <&macro_tap &kp E &kp L>
     ;
 };
-//exactly(duplicate) inx 25013
-//educational(duplicate) inx 25014
+// inx 25013
+stenocombo_exactly: stenocombo_exactly {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp X &kp A &kp C &kp T &kp L &kp Y>
+    ;
+};
+// inx 25014
+stenocombo_educational: stenocombo_educational {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp U &kp C &kp A &kp T &kp I &kp O &kp N &kp A &kp L>
+    ;
+};
 // inx 25016
 stenocombo_else: stenocombo_else {
     compatible = "zmk,behavior-macro";
@@ -76,7 +91,15 @@ stenocombo_egg: stenocombo_egg {
     , <&macro_tap &kp E &kp G &kp G>
     ;
 };
-//educate(duplicate) inx 25019
+// inx 25019
+stenocombo_educate: stenocombo_educate {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp U &kp C &kp A &kp T &kp E>
+    ;
+};
 // inx 25021
 stenocombo_editing: stenocombo_editing {
     compatible = "zmk,behavior-macro";
@@ -132,8 +155,24 @@ stenocombo_you: stenocombo_you {
     , <&macro_tap &kp Y &kp O &kp U>
     ;
 };
-//understand(duplicate) inx 25034
-//much(duplicate) inx 25035
+// inx 25034
+stenocombo_understand: stenocombo_understand {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>
+    ;
+};
+// inx 25035
+stenocombo_much: stenocombo_much {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp M &kp U &kp C &kp H>
+    ;
+};
 // inx 25040
 stenocombo_USB: stenocombo_USB {
     compatible = "zmk,behavior-macro";
@@ -152,7 +191,15 @@ stenocombo_usk: stenocombo_usk {
     , <&macro_tap &kp U &kp S &kp K>
     ;
 };
-//unfortunately(duplicate) inx 25042
+// inx 25042
+stenocombo_unfortunately: stenocombo_unfortunately {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp F &kp O &kp R &kp T &kp U &kp N &kp A &kp T &kp E &kp L &kp Y>
+    ;
+};
 // inx 25046
 stenocombo_urn: stenocombo_urn {
     compatible = "zmk,behavior-macro";
@@ -229,7 +276,15 @@ stenocombo_understands: stenocombo_understands {
     ;
 };
 //understand(duplicate) inx 25060
-//usual(duplicate) inx 25062
+// inx 25062
+stenocombo_usual: stenocombo_usual {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp S &kp U &kp A &kp L>
+    ;
+};
 //understanding(duplicate) inx 25064
 //understands(duplicate) inx 25066
 // inx 25067
@@ -251,8 +306,24 @@ stenocombo_ultrasound: stenocombo_ultrasound {
     ;
 };
 //urgent(duplicate) inx 25071
-//yours(duplicate) inx 25073
-//up(duplicate) inx 25074
+// inx 25073
+stenocombo_yours: stenocombo_yours {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp Y &kp O &kp U &kp R &kp S>
+    ;
+};
+// inx 25074
+stenocombo_up: stenocombo_up {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P>
+    ;
+};
 // inx 25076
 stenocombo_unless: stenocombo_unless {
     compatible = "zmk,behavior-macro";
