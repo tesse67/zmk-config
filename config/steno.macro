@@ -1,345 +1,445 @@
+// inx 24999
+// EPBGDZ -> endings
+steno_EPBGDZ {{
+    timeout-ms = <116>;
+    key-positions = <4, 7,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_endings>;
+};
+// inx 25001
+// EPBTD -> end
+steno_EPBTD {{
+    timeout-ms = <100>;
+    key-positions = <4, 7,  , 1, 7,  , 2, 9,  , 1, 9,  , 3, 1>;
+    bindings = <&stenocombo_end>;
+};
+// inx 25003
+// EPBD -> end
+steno_EPBD {{
+    timeout-ms = <83>;
+    key-positions = <4, 7,  , 1, 7,  , 2, 9,  , 3, 1>;
+    bindings = <&stenocombo_end>;
+};
+// inx 25004
+// EPBDZ -> ends
+steno_EPBDZ {{
+    timeout-ms = <100>;
+    key-positions = <4, 7,  , 1, 7,  , 2, 9,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_ends>;
+};
+// inx 25006
+// EPLT -> empty
+steno_EPLT {{
+    timeout-ms = <83>;
+    key-positions = <4, 7,  , 1, 7,  , 1, 8,  , 1, 9>;
+    bindings = <&stenocombo_empty>;
+};
+// inx 25007
+// EPS -> especially
+steno_EPS {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 1, 7,  , 3, 0>;
+    bindings = <&stenocombo_especially>;
+};
+// inx 25008
 // EPD -> end
 steno_EPD {{
     timeout-ms = <66>;
     key-positions = <4, 7,  , 1, 7,  , 3, 1>;
     bindings = <&stenocombo_end>;
 };
+// inx 25009
 // EPDZ -> ends
 steno_EPDZ {{
     timeout-ms = <83>;
     key-positions = <4, 7,  , 1, 7,  , 3, 1,  , 4, 3>;
     bindings = <&stenocombo_ends>;
 };
+// inx 25010
 // EB -> ebb
 steno_EB {{
     timeout-ms = <50>;
     key-positions = <4, 7,  , 2, 9>;
     bindings = <&stenocombo_ebb>;
 };
+// inx 25012
 // EL -> El
 steno_EL {{
     timeout-ms = <50>;
     key-positions = <4, 7,  , 1, 8>;
     bindings = <&stenocombo_El>;
 };
+// inx 25013
 // ELG -> exactly
 steno_ELG {{
     timeout-ms = <66>;
     key-positions = <4, 7,  , 1, 8,  , 2, 8>;
     bindings = <&stenocombo_exactly>;
 };
+// inx 25014
 // ELGS -> educational
 steno_ELGS {{
     timeout-ms = <83>;
     key-positions = <4, 7,  , 1, 8,  , 2, 8,  , 3, 0>;
     bindings = <&stenocombo_educational>;
 };
+// inx 25016
 // ELS -> else
 steno_ELS {{
     timeout-ms = <66>;
     key-positions = <4, 7,  , 1, 8,  , 3, 0>;
     bindings = <&stenocombo_else>;
 };
+// inx 25018
 // EG -> egg
 steno_EG {{
     timeout-ms = <50>;
     key-positions = <4, 7,  , 2, 8>;
     bindings = <&stenocombo_egg>;
 };
+// inx 25019
 // EGT -> educate
 steno_EGT {{
     timeout-ms = <66>;
     key-positions = <4, 7,  , 2, 8,  , 1, 9>;
     bindings = <&stenocombo_educate>;
 };
+// inx 25021
 // EGTD -> editing
 steno_EGTD {{
     timeout-ms = <83>;
     key-positions = <4, 7,  , 2, 8,  , 1, 9,  , 3, 1>;
     bindings = <&stenocombo_editing>;
 };
+// inx 25022
 // EGS -> eggs
 steno_EGS {{
     timeout-ms = <66>;
     key-positions = <4, 7,  , 2, 8,  , 3, 0>;
     bindings = <&stenocombo_eggs>;
 };
+// inx 25026
 // ETD -> edit
 steno_ETD {{
     timeout-ms = <66>;
     key-positions = <4, 7,  , 1, 9,  , 3, 1>;
     bindings = <&stenocombo_edit>;
 };
+// inx 25027
 // ETDZ -> edit
 steno_ETDZ {{
     timeout-ms = <83>;
     key-positions = <4, 7,  , 1, 9,  , 3, 1,  , 4, 3>;
     bindings = <&stenocombo_edit>;
 };
+// inx 25029
 // ED -> Ed
 steno_ED {{
     timeout-ms = <50>;
     key-positions = <4, 7,  , 3, 1>;
     bindings = <&stenocombo_Ed>;
 };
+// inx 25030
 // EZ -> easy
 steno_EZ {{
     timeout-ms = <50>;
     key-positions = <4, 7,  , 4, 3>;
     bindings = <&stenocombo_easy>;
 };
+// inx 25031
 // U -> you
 steno_U {{
     timeout-ms = <33>;
     key-positions = <4, 8>;
     bindings = <&stenocombo_you>;
 };
+// inx 25034
 // UFRPBD -> understand
 steno_UFRPBD {{
     timeout-ms = <116>;
     key-positions = <4, 8,  , 1, 6,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 1>;
     bindings = <&stenocombo_understand>;
 };
+// inx 25035
 // UFP -> much
 steno_UFP {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 6,  , 1, 7>;
     bindings = <&stenocombo_much>;
 };
+// inx 25040
 // UFB -> USB
 steno_UFB {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 6,  , 2, 9>;
     bindings = <&stenocombo_USB>;
 };
+// inx 25041
 // UFBG -> usk
 steno_UFBG {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 1, 6,  , 2, 9,  , 2, 8>;
     bindings = <&stenocombo_usk>;
 };
+// inx 25042
 // UFL -> unfortunately
 steno_UFL {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 6,  , 1, 8>;
     bindings = <&stenocombo_unfortunately>;
 };
+// inx 25046
 // URPB -> urn
 steno_URPB {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9>;
     bindings = <&stenocombo_urn>;
 };
+// inx 25047
 // URPBLG -> urge
 steno_URPBLG {{
     timeout-ms = <116>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8>;
     bindings = <&stenocombo_urge>;
 };
+// inx 25048
 // URPBLGT -> urgent
 steno_URPBLGT {{
     timeout-ms = <133>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8,  , 1, 9>;
     bindings = <&stenocombo_urgent>;
 };
+// inx 25049
 // URPBLGS -> urges
 steno_URPBLGS {{
     timeout-ms = <133>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8,  , 3, 0>;
     bindings = <&stenocombo_urges>;
 };
+// inx 25050
 // URPBLGD -> urged
 steno_URPBLGD {{
     timeout-ms = <133>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8,  , 3, 1>;
     bindings = <&stenocombo_urged>;
 };
+// inx 25051
 // URPBGSD -> understanding
 steno_URPBGSD {{
     timeout-ms = <133>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 0,  , 3, 1>;
     bindings = <&stenocombo_understanding>;
 };
+// inx 25052
 // URPBGD -> understanding
 steno_URPBGD {{
     timeout-ms = <116>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 1>;
     bindings = <&stenocombo_understanding>;
 };
+// inx 25054
 // URPBTD -> understand
 steno_URPBTD {{
     timeout-ms = <116>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 9,  , 3, 1>;
     bindings = <&stenocombo_understand>;
 };
+// inx 25055
 // URPBS -> urns
 steno_URPBS {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 0>;
     bindings = <&stenocombo_urns>;
 };
+// inx 25056
 // URPBD -> understand
 steno_URPBD {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 1>;
     bindings = <&stenocombo_understand>;
 };
+// inx 25057
 // URPBDZ -> understands
 steno_URPBDZ {{
     timeout-ms = <116>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 1,  , 4, 3>;
     bindings = <&stenocombo_understands>;
 };
+// inx 25060
 // URPD -> understand
 steno_URPD {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 3, 1>;
     bindings = <&stenocombo_understand>;
 };
+// inx 25062
 // URBL -> usual
 steno_URBL {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 2, 7,  , 2, 9,  , 1, 8>;
     bindings = <&stenocombo_usual>;
 };
+// inx 25064
 // URBGD -> understanding
 steno_URBGD {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 2, 7,  , 2, 9,  , 2, 8,  , 3, 1>;
     bindings = <&stenocombo_understanding>;
 };
+// inx 25066
 // URBDZ -> understands
 steno_URBDZ {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 2, 7,  , 2, 9,  , 3, 1,  , 4, 3>;
     bindings = <&stenocombo_understands>;
 };
+// inx 25067
 // URL -> URL
 steno_URL {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 2, 7,  , 1, 8>;
     bindings = <&stenocombo_URL>;
 };
+// inx 25070
 // URLD -> ultrasound
 steno_URLD {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 2, 7,  , 1, 8,  , 3, 1>;
     bindings = <&stenocombo_ultrasound>;
 };
+// inx 25071
 // URGT -> urgent
 steno_URGT {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 2, 7,  , 2, 8,  , 1, 9>;
     bindings = <&stenocombo_urgent>;
 };
+// inx 25073
 // URS -> yours
 steno_URS {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 2, 7,  , 3, 0>;
     bindings = <&stenocombo_yours>;
 };
+// inx 25074
 // UP -> up
 steno_UP {{
     timeout-ms = <50>;
     key-positions = <4, 8,  , 1, 7>;
     bindings = <&stenocombo_up>;
 };
+// inx 25076
 // UPBLS -> unless
 steno_UPBLS {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 1, 8,  , 3, 0>;
     bindings = <&stenocombo_unless>;
 };
+// inx 25078
 // UPBGS -> unction
 steno_UPBGS {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 0>;
     bindings = <&stenocombo_unction>;
 };
+// inx 25079
 // UPBGD -> underground
 steno_UPBGD {{
     timeout-ms = <100>;
     key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 1>;
     bindings = <&stenocombo_underground>;
 };
+// inx 25082
 // UPBS -> understand
 steno_UPBS {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 3, 0>;
     bindings = <&stenocombo_understand>;
 };
+// inx 25085
 // UPL -> um
 steno_UPL {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 7,  , 1, 8>;
     bindings = <&stenocombo_um>;
 };
+// inx 25086
 // UPLT -> ultimate
 steno_UPLT {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 1, 7,  , 1, 8,  , 1, 9>;
     bindings = <&stenocombo_ultimate>;
 };
+// inx 25087
 // UPLD -> upload
 steno_UPLD {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 1, 7,  , 1, 8,  , 3, 1>;
     bindings = <&stenocombo_upload>;
 };
+// inx 25088
 // UPG -> upping
 steno_UPG {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 7,  , 2, 8>;
     bindings = <&stenocombo_upping>;
 };
+// inx 25089
 // UPGD -> upgrade
 steno_UPGD {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 1, 7,  , 2, 8,  , 3, 1>;
     bindings = <&stenocombo_upgrade>;
 };
+// inx 25092
 // UPS -> ups
 steno_UPS {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 7,  , 3, 0>;
     bindings = <&stenocombo_ups>;
 };
+// inx 25093
 // UPDZ -> upside
 steno_UPDZ {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 1, 7,  , 3, 1,  , 4, 3>;
     bindings = <&stenocombo_upside>;
 };
+// inx 25099
 // UBGS -> UX
 steno_UBGS {{
     timeout-ms = <83>;
     key-positions = <4, 8,  , 2, 9,  , 2, 8,  , 3, 0>;
     bindings = <&stenocombo_UX>;
 };
+// inx 25105
 // ULG -> ugly
 steno_ULG {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 1, 8,  , 2, 8>;
     bindings = <&stenocombo_ugly>;
 };
+// inx 25108
 // UG -> ugh
 steno_UG {{
     timeout-ms = <50>;
     key-positions = <4, 8,  , 2, 8>;
     bindings = <&stenocombo_ugh>;
 };
+// inx 25109
 // UGS -> us
 steno_UGS {{
     timeout-ms = <66>;
     key-positions = <4, 8,  , 2, 8,  , 3, 0>;
     bindings = <&stenocombo_us>;
 };
+// inx 25110
 // UT -> ut
 steno_UT {{
     timeout-ms = <50>;
     key-positions = <4, 8,  , 1, 9>;
     bindings = <&stenocombo_ut>;
 };
+// inx 25111
 // US -> us
 steno_US {{
     timeout-ms = <50>;
