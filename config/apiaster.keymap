@@ -638,6 +638,8 @@ name: name##_mod_tap {                     \
             ;
         };
 
+        #include "steno.combo"
+
     };
 
     behaviors {
@@ -899,7 +901,7 @@ name: name##_mod_tap {                     \
             bindings = <&uneq>;
         };
 
-        #include "steno.combo"
+        #include "steno.macro"
 
     };
 

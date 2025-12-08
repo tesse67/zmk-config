@@ -1,0 +1,348 @@
+// EPD -> end
+steno_EPD {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 1, 7,  , 3, 1>;
+    bindings = <&stenocombo_end>;
+};
+// EPDZ -> ends
+steno_EPDZ {{
+    timeout-ms = <83>;
+    key-positions = <4, 7,  , 1, 7,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_ends>;
+};
+// EB -> ebb
+steno_EB {{
+    timeout-ms = <50>;
+    key-positions = <4, 7,  , 2, 9>;
+    bindings = <&stenocombo_ebb>;
+};
+// EL -> El
+steno_EL {{
+    timeout-ms = <50>;
+    key-positions = <4, 7,  , 1, 8>;
+    bindings = <&stenocombo_El>;
+};
+// ELG -> exactly
+steno_ELG {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 1, 8,  , 2, 8>;
+    bindings = <&stenocombo_exactly>;
+};
+// ELGS -> educational
+steno_ELGS {{
+    timeout-ms = <83>;
+    key-positions = <4, 7,  , 1, 8,  , 2, 8,  , 3, 0>;
+    bindings = <&stenocombo_educational>;
+};
+// ELS -> else
+steno_ELS {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 1, 8,  , 3, 0>;
+    bindings = <&stenocombo_else>;
+};
+// EG -> egg
+steno_EG {{
+    timeout-ms = <50>;
+    key-positions = <4, 7,  , 2, 8>;
+    bindings = <&stenocombo_egg>;
+};
+// EGT -> educate
+steno_EGT {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 2, 8,  , 1, 9>;
+    bindings = <&stenocombo_educate>;
+};
+// EGTD -> editing
+steno_EGTD {{
+    timeout-ms = <83>;
+    key-positions = <4, 7,  , 2, 8,  , 1, 9,  , 3, 1>;
+    bindings = <&stenocombo_editing>;
+};
+// EGS -> eggs
+steno_EGS {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 2, 8,  , 3, 0>;
+    bindings = <&stenocombo_eggs>;
+};
+// ETD -> edit
+steno_ETD {{
+    timeout-ms = <66>;
+    key-positions = <4, 7,  , 1, 9,  , 3, 1>;
+    bindings = <&stenocombo_edit>;
+};
+// ETDZ -> edit
+steno_ETDZ {{
+    timeout-ms = <83>;
+    key-positions = <4, 7,  , 1, 9,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_edit>;
+};
+// ED -> Ed
+steno_ED {{
+    timeout-ms = <50>;
+    key-positions = <4, 7,  , 3, 1>;
+    bindings = <&stenocombo_Ed>;
+};
+// EZ -> easy
+steno_EZ {{
+    timeout-ms = <50>;
+    key-positions = <4, 7,  , 4, 3>;
+    bindings = <&stenocombo_easy>;
+};
+// U -> you
+steno_U {{
+    timeout-ms = <33>;
+    key-positions = <4, 8>;
+    bindings = <&stenocombo_you>;
+};
+// UFRPBD -> understand
+steno_UFRPBD {{
+    timeout-ms = <116>;
+    key-positions = <4, 8,  , 1, 6,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 1>;
+    bindings = <&stenocombo_understand>;
+};
+// UFP -> much
+steno_UFP {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 6,  , 1, 7>;
+    bindings = <&stenocombo_much>;
+};
+// UFB -> USB
+steno_UFB {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 6,  , 2, 9>;
+    bindings = <&stenocombo_USB>;
+};
+// UFBG -> usk
+steno_UFBG {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 1, 6,  , 2, 9,  , 2, 8>;
+    bindings = <&stenocombo_usk>;
+};
+// UFL -> unfortunately
+steno_UFL {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 6,  , 1, 8>;
+    bindings = <&stenocombo_unfortunately>;
+};
+// URPB -> urn
+steno_URPB {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9>;
+    bindings = <&stenocombo_urn>;
+};
+// URPBLG -> urge
+steno_URPBLG {{
+    timeout-ms = <116>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8>;
+    bindings = <&stenocombo_urge>;
+};
+// URPBLGT -> urgent
+steno_URPBLGT {{
+    timeout-ms = <133>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8,  , 1, 9>;
+    bindings = <&stenocombo_urgent>;
+};
+// URPBLGS -> urges
+steno_URPBLGS {{
+    timeout-ms = <133>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8,  , 3, 0>;
+    bindings = <&stenocombo_urges>;
+};
+// URPBLGD -> urged
+steno_URPBLGD {{
+    timeout-ms = <133>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 8,  , 2, 8,  , 3, 1>;
+    bindings = <&stenocombo_urged>;
+};
+// URPBGSD -> understanding
+steno_URPBGSD {{
+    timeout-ms = <133>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 0,  , 3, 1>;
+    bindings = <&stenocombo_understanding>;
+};
+// URPBGD -> understanding
+steno_URPBGD {{
+    timeout-ms = <116>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 1>;
+    bindings = <&stenocombo_understanding>;
+};
+// URPBTD -> understand
+steno_URPBTD {{
+    timeout-ms = <116>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 1, 9,  , 3, 1>;
+    bindings = <&stenocombo_understand>;
+};
+// URPBS -> urns
+steno_URPBS {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 0>;
+    bindings = <&stenocombo_urns>;
+};
+// URPBD -> understand
+steno_URPBD {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 1>;
+    bindings = <&stenocombo_understand>;
+};
+// URPBDZ -> understands
+steno_URPBDZ {{
+    timeout-ms = <116>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 2, 9,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_understands>;
+};
+// URPD -> understand
+steno_URPD {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 7,  , 3, 1>;
+    bindings = <&stenocombo_understand>;
+};
+// URBL -> usual
+steno_URBL {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 2, 7,  , 2, 9,  , 1, 8>;
+    bindings = <&stenocombo_usual>;
+};
+// URBGD -> understanding
+steno_URBGD {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 2, 7,  , 2, 9,  , 2, 8,  , 3, 1>;
+    bindings = <&stenocombo_understanding>;
+};
+// URBDZ -> understands
+steno_URBDZ {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 2, 7,  , 2, 9,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_understands>;
+};
+// URL -> URL
+steno_URL {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 8>;
+    bindings = <&stenocombo_URL>;
+};
+// URLD -> ultrasound
+steno_URLD {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 2, 7,  , 1, 8,  , 3, 1>;
+    bindings = <&stenocombo_ultrasound>;
+};
+// URGT -> urgent
+steno_URGT {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 2, 7,  , 2, 8,  , 1, 9>;
+    bindings = <&stenocombo_urgent>;
+};
+// URS -> yours
+steno_URS {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 2, 7,  , 3, 0>;
+    bindings = <&stenocombo_yours>;
+};
+// UP -> up
+steno_UP {{
+    timeout-ms = <50>;
+    key-positions = <4, 8,  , 1, 7>;
+    bindings = <&stenocombo_up>;
+};
+// UPBLS -> unless
+steno_UPBLS {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 1, 8,  , 3, 0>;
+    bindings = <&stenocombo_unless>;
+};
+// UPBGS -> unction
+steno_UPBGS {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 0>;
+    bindings = <&stenocombo_unction>;
+};
+// UPBGD -> underground
+steno_UPBGD {{
+    timeout-ms = <100>;
+    key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 2, 8,  , 3, 1>;
+    bindings = <&stenocombo_underground>;
+};
+// UPBS -> understand
+steno_UPBS {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 1, 7,  , 2, 9,  , 3, 0>;
+    bindings = <&stenocombo_understand>;
+};
+// UPL -> um
+steno_UPL {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 7,  , 1, 8>;
+    bindings = <&stenocombo_um>;
+};
+// UPLT -> ultimate
+steno_UPLT {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 1, 7,  , 1, 8,  , 1, 9>;
+    bindings = <&stenocombo_ultimate>;
+};
+// UPLD -> upload
+steno_UPLD {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 1, 7,  , 1, 8,  , 3, 1>;
+    bindings = <&stenocombo_upload>;
+};
+// UPG -> upping
+steno_UPG {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 7,  , 2, 8>;
+    bindings = <&stenocombo_upping>;
+};
+// UPGD -> upgrade
+steno_UPGD {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 1, 7,  , 2, 8,  , 3, 1>;
+    bindings = <&stenocombo_upgrade>;
+};
+// UPS -> ups
+steno_UPS {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 7,  , 3, 0>;
+    bindings = <&stenocombo_ups>;
+};
+// UPDZ -> upside
+steno_UPDZ {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 1, 7,  , 3, 1,  , 4, 3>;
+    bindings = <&stenocombo_upside>;
+};
+// UBGS -> UX
+steno_UBGS {{
+    timeout-ms = <83>;
+    key-positions = <4, 8,  , 2, 9,  , 2, 8,  , 3, 0>;
+    bindings = <&stenocombo_UX>;
+};
+// ULG -> ugly
+steno_ULG {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 1, 8,  , 2, 8>;
+    bindings = <&stenocombo_ugly>;
+};
+// UG -> ugh
+steno_UG {{
+    timeout-ms = <50>;
+    key-positions = <4, 8,  , 2, 8>;
+    bindings = <&stenocombo_ugh>;
+};
+// UGS -> us
+steno_UGS {{
+    timeout-ms = <66>;
+    key-positions = <4, 8,  , 2, 8,  , 3, 0>;
+    bindings = <&stenocombo_us>;
+};
+// UT -> ut
+steno_UT {{
+    timeout-ms = <50>;
+    key-positions = <4, 8,  , 1, 9>;
+    bindings = <&stenocombo_ut>;
+};
+// US -> us
+steno_US {{
+    timeout-ms = <50>;
+    key-positions = <4, 8,  , 3, 0>;
+    bindings = <&stenocombo_us>;
+};

@@ -1,139 +1,496 @@
-// URBDZ -> understands
-steno_URBDZ {
-    timeout-ms = <100>;
-    key-positions = <48 27 29 31 43>;
-    bindings = <&kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp S>;
+stenocombo_end: end {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp N &kp D>
+    ;
 };
-// URL -> URL
-steno_URL {
-    timeout-ms = <66>;
-    key-positions = <48 27 18>;
-    bindings = <&kp U &kp R &kp L>;
+stenocombo_ends: ends {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp N &kp D &kp S>
+    ;
 };
-// URLD -> ultrasound
-steno_URLD {
-    timeout-ms = <83>;
-    key-positions = <48 27 18 31>;
-    bindings = <&kp U &kp L &kp T &kp R &kp A &kp S &kp O &kp U &kp N &kp D>;
+stenocombo_empty: empty {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp M &kp P &kp T &kp Y>
+    ;
 };
-// URGT -> urgent
-steno_URGT {
-    timeout-ms = <83>;
-    key-positions = <48 27 28 19>;
-    bindings = <&kp U &kp R &kp G &kp E &kp N &kp T>;
+stenocombo_especially: especially {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp S &kp P &kp E &kp C &kp I &kp A &kp L &kp L &kp Y>
+    ;
 };
-// URS -> yours
-steno_URS {
-    timeout-ms = <66>;
-    key-positions = <48 27 30>;
-    bindings = <&kp Y &kp O &kp U &kp R &kp S>;
+stenocombo_end: end {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp N &kp D>
+    ;
 };
-// UP -> up
-steno_UP {
-    timeout-ms = <50>;
-    key-positions = <48 17>;
-    bindings = <&kp U &kp P>;
+stenocombo_ends: ends {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp N &kp D &kp S>
+    ;
 };
-// UPBLS -> unless
-steno_UPBLS {
-    timeout-ms = <100>;
-    key-positions = <48 17 29 18 30>;
-    bindings = <&kp U &kp N &kp L &kp E &kp S &kp S>;
+stenocombo_ebb: ebb {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp B &kp B>
+    ;
 };
-// UPBGS -> unction
-steno_UPBGS {
-    timeout-ms = <100>;
-    key-positions = <48 17 29 28 30>;
-    bindings = <&kp U &kp N &kp C &kp T &kp I &kp O &kp N>;
+stenocombo_El: El {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp L>
+    ;
 };
-// UPBGD -> underground
-steno_UPBGD {
-    timeout-ms = <100>;
-    key-positions = <48 17 29 28 31>;
-    bindings = <&kp U &kp N &kp D &kp E &kp R &kp G &kp R &kp O &kp U &kp N &kp D>;
+stenocombo_exactly: exactly {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp X &kp A &kp C &kp T &kp L &kp Y>
+    ;
 };
-// UPBS -> understand
-steno_UPBS {
-    timeout-ms = <83>;
-    key-positions = <48 17 29 30>;
-    bindings = <&kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>;
+stenocombo_educational: educational {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp U &kp C &kp A &kp T &kp I &kp O &kp N &kp A &kp L>
+    ;
 };
-// UPL -> um
-steno_UPL {
-    timeout-ms = <66>;
-    key-positions = <48 17 18>;
-    bindings = <&kp U &kp M>;
+stenocombo_else: else {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp L &kp S &kp E>
+    ;
 };
-// UPLT -> ultimate
-steno_UPLT {
-    timeout-ms = <83>;
-    key-positions = <48 17 18 19>;
-    bindings = <&kp U &kp L &kp T &kp I &kp M &kp A &kp T &kp E>;
+stenocombo_egg: egg {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp G &kp G>
+    ;
 };
-// UPLD -> upload
-steno_UPLD {
-    timeout-ms = <83>;
-    key-positions = <48 17 18 31>;
-    bindings = <&kp U &kp P &kp L &kp O &kp A &kp D>;
+stenocombo_educate: educate {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp U &kp C &kp A &kp T &kp E>
+    ;
 };
-// UPG -> upping
-steno_UPG {
-    timeout-ms = <66>;
-    key-positions = <48 17 28>;
-    bindings = <&kp U &kp P &kp P &kp I &kp N &kp G>;
+stenocombo_editing: editing {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp I &kp T &kp I &kp N &kp G>
+    ;
 };
-// UPGD -> upgrade
-steno_UPGD {
-    timeout-ms = <83>;
-    key-positions = <48 17 28 31>;
-    bindings = <&kp U &kp P &kp G &kp R &kp A &kp D &kp E>;
+stenocombo_eggs: eggs {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp G &kp G &kp S>
+    ;
 };
-// UPS -> ups
-steno_UPS {
-    timeout-ms = <66>;
-    key-positions = <48 17 30>;
-    bindings = <&kp U &kp P &kp S>;
+stenocombo_edit: edit {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp I &kp T>
+    ;
 };
-// UPDZ -> upside
-steno_UPDZ {
-    timeout-ms = <83>;
-    key-positions = <48 17 31 43>;
-    bindings = <&kp U &kp P &kp S &kp I &kp D &kp E>;
+stenocombo_edit: edit {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D &kp I &kp T>
+    ;
 };
-// UBGS -> UX
-steno_UBGS {
-    timeout-ms = <83>;
-    key-positions = <48 29 28 30>;
-    bindings = <&kp U &kp X>;
+stenocombo_Ed: Ed {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp D>
+    ;
 };
-// ULG -> ugly
-steno_ULG {
-    timeout-ms = <66>;
-    key-positions = <48 18 28>;
-    bindings = <&kp U &kp G &kp L &kp Y>;
+stenocombo_easy: easy {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp E &kp A &kp S &kp Y>
+    ;
 };
-// UG -> ugh
-steno_UG {
-    timeout-ms = <50>;
-    key-positions = <48 28>;
-    bindings = <&kp U &kp G &kp H>;
+stenocombo_you: you {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp Y &kp O &kp U>
+    ;
 };
-// UGS -> us
-steno_UGS {
-    timeout-ms = <66>;
-    key-positions = <48 28 30>;
-    bindings = <&kp U &kp S>;
+stenocombo_understand: understand {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>
+    ;
 };
-// UT -> ut
-steno_UT {
-    timeout-ms = <50>;
-    key-positions = <48 19>;
-    bindings = <&kp U &kp T>;
+stenocombo_much: much {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp M &kp U &kp C &kp H>
+    ;
 };
-// US -> us
-steno_US {
-    timeout-ms = <50>;
-    key-positions = <48 30>;
-    bindings = <&kp U &kp S>;
+stenocombo_USB: USB {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp S &kp B>
+    ;
 };
-
+stenocombo_usk: usk {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp S &kp K>
+    ;
+};
+stenocombo_unfortunately: unfortunately {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp F &kp O &kp R &kp T &kp U &kp N &kp A &kp T &kp E &kp L &kp Y>
+    ;
+};
+stenocombo_urn: urn {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp N>
+    ;
+};
+stenocombo_urge: urge {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp G &kp E>
+    ;
+};
+stenocombo_urgent: urgent {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp G &kp E &kp N &kp T>
+    ;
+};
+stenocombo_urges: urges {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp G &kp E &kp S>
+    ;
+};
+stenocombo_urged: urged {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp G &kp E &kp D>
+    ;
+};
+stenocombo_understanding: understanding {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp I &kp N &kp G>
+    ;
+};
+stenocombo_understanding: understanding {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp I &kp N &kp G>
+    ;
+};
+stenocombo_understand: understand {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>
+    ;
+};
+stenocombo_urns: urns {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp N &kp S>
+    ;
+};
+stenocombo_understand: understand {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>
+    ;
+};
+stenocombo_understands: understands {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp S>
+    ;
+};
+stenocombo_understand: understand {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>
+    ;
+};
+stenocombo_usual: usual {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp S &kp U &kp A &kp L>
+    ;
+};
+stenocombo_understanding: understanding {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp I &kp N &kp G>
+    ;
+};
+stenocombo_understands: understands {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp S>
+    ;
+};
+stenocombo_URL: URL {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp L>
+    ;
+};
+stenocombo_ultrasound: ultrasound {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp L &kp T &kp R &kp A &kp S &kp O &kp U &kp N &kp D>
+    ;
+};
+stenocombo_urgent: urgent {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp R &kp G &kp E &kp N &kp T>
+    ;
+};
+stenocombo_yours: yours {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp Y &kp O &kp U &kp R &kp S>
+    ;
+};
+stenocombo_up: up {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P>
+    ;
+};
+stenocombo_unless: unless {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp L &kp E &kp S &kp S>
+    ;
+};
+stenocombo_unction: unction {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp C &kp T &kp I &kp O &kp N>
+    ;
+};
+stenocombo_underground: underground {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp G &kp R &kp O &kp U &kp N &kp D>
+    ;
+};
+stenocombo_understand: understand {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>
+    ;
+};
+stenocombo_um: um {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp M>
+    ;
+};
+stenocombo_ultimate: ultimate {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp L &kp T &kp I &kp M &kp A &kp T &kp E>
+    ;
+};
+stenocombo_upload: upload {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P &kp L &kp O &kp A &kp D>
+    ;
+};
+stenocombo_upping: upping {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P &kp P &kp I &kp N &kp G>
+    ;
+};
+stenocombo_upgrade: upgrade {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P &kp G &kp R &kp A &kp D &kp E>
+    ;
+};
+stenocombo_ups: ups {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P &kp S>
+    ;
+};
+stenocombo_upside: upside {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp P &kp S &kp I &kp D &kp E>
+    ;
+};
+stenocombo_UX: UX {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp X>
+    ;
+};
+stenocombo_ugly: ugly {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp G &kp L &kp Y>
+    ;
+};
+stenocombo_ugh: ugh {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp G &kp H>
+    ;
+};
+stenocombo_us: us {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp S>
+    ;
+};
+stenocombo_ut: ut {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp T>
+    ;
+};
+stenocombo_us: us {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+    = <&macro_tap_time 1>
+    , <&macro_tap &kp U &kp S>
+    ;
+};
