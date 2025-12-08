@@ -1,0 +1,139 @@
+// URBDZ -> understands
+steno_URBDZ {
+    timeout-ms = <100>;
+    key-positions = <48 27 29 31 43>;
+    bindings = <&kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D &kp S>;
+};
+// URL -> URL
+steno_URL {
+    timeout-ms = <66>;
+    key-positions = <48 27 18>;
+    bindings = <&kp U &kp R &kp L>;
+};
+// URLD -> ultrasound
+steno_URLD {
+    timeout-ms = <83>;
+    key-positions = <48 27 18 31>;
+    bindings = <&kp U &kp L &kp T &kp R &kp A &kp S &kp O &kp U &kp N &kp D>;
+};
+// URGT -> urgent
+steno_URGT {
+    timeout-ms = <83>;
+    key-positions = <48 27 28 19>;
+    bindings = <&kp U &kp R &kp G &kp E &kp N &kp T>;
+};
+// URS -> yours
+steno_URS {
+    timeout-ms = <66>;
+    key-positions = <48 27 30>;
+    bindings = <&kp Y &kp O &kp U &kp R &kp S>;
+};
+// UP -> up
+steno_UP {
+    timeout-ms = <50>;
+    key-positions = <48 17>;
+    bindings = <&kp U &kp P>;
+};
+// UPBLS -> unless
+steno_UPBLS {
+    timeout-ms = <100>;
+    key-positions = <48 17 29 18 30>;
+    bindings = <&kp U &kp N &kp L &kp E &kp S &kp S>;
+};
+// UPBGS -> unction
+steno_UPBGS {
+    timeout-ms = <100>;
+    key-positions = <48 17 29 28 30>;
+    bindings = <&kp U &kp N &kp C &kp T &kp I &kp O &kp N>;
+};
+// UPBGD -> underground
+steno_UPBGD {
+    timeout-ms = <100>;
+    key-positions = <48 17 29 28 31>;
+    bindings = <&kp U &kp N &kp D &kp E &kp R &kp G &kp R &kp O &kp U &kp N &kp D>;
+};
+// UPBS -> understand
+steno_UPBS {
+    timeout-ms = <83>;
+    key-positions = <48 17 29 30>;
+    bindings = <&kp U &kp N &kp D &kp E &kp R &kp S &kp T &kp A &kp N &kp D>;
+};
+// UPL -> um
+steno_UPL {
+    timeout-ms = <66>;
+    key-positions = <48 17 18>;
+    bindings = <&kp U &kp M>;
+};
+// UPLT -> ultimate
+steno_UPLT {
+    timeout-ms = <83>;
+    key-positions = <48 17 18 19>;
+    bindings = <&kp U &kp L &kp T &kp I &kp M &kp A &kp T &kp E>;
+};
+// UPLD -> upload
+steno_UPLD {
+    timeout-ms = <83>;
+    key-positions = <48 17 18 31>;
+    bindings = <&kp U &kp P &kp L &kp O &kp A &kp D>;
+};
+// UPG -> upping
+steno_UPG {
+    timeout-ms = <66>;
+    key-positions = <48 17 28>;
+    bindings = <&kp U &kp P &kp P &kp I &kp N &kp G>;
+};
+// UPGD -> upgrade
+steno_UPGD {
+    timeout-ms = <83>;
+    key-positions = <48 17 28 31>;
+    bindings = <&kp U &kp P &kp G &kp R &kp A &kp D &kp E>;
+};
+// UPS -> ups
+steno_UPS {
+    timeout-ms = <66>;
+    key-positions = <48 17 30>;
+    bindings = <&kp U &kp P &kp S>;
+};
+// UPDZ -> upside
+steno_UPDZ {
+    timeout-ms = <83>;
+    key-positions = <48 17 31 43>;
+    bindings = <&kp U &kp P &kp S &kp I &kp D &kp E>;
+};
+// UBGS -> UX
+steno_UBGS {
+    timeout-ms = <83>;
+    key-positions = <48 29 28 30>;
+    bindings = <&kp U &kp X>;
+};
+// ULG -> ugly
+steno_ULG {
+    timeout-ms = <66>;
+    key-positions = <48 18 28>;
+    bindings = <&kp U &kp G &kp L &kp Y>;
+};
+// UG -> ugh
+steno_UG {
+    timeout-ms = <50>;
+    key-positions = <48 28>;
+    bindings = <&kp U &kp G &kp H>;
+};
+// UGS -> us
+steno_UGS {
+    timeout-ms = <66>;
+    key-positions = <48 28 30>;
+    bindings = <&kp U &kp S>;
+};
+// UT -> ut
+steno_UT {
+    timeout-ms = <50>;
+    key-positions = <48 19>;
+    bindings = <&kp U &kp T>;
+};
+// US -> us
+steno_US {
+    timeout-ms = <50>;
+    key-positions = <48 30>;
+    bindings = <&kp U &kp S>;
+};
+

@@ -899,11 +899,8 @@ name: name##_mod_tap {                     \
             bindings = <&uneq>;
         };
 
-        /* combo_star { */
-            /* timeout-ms = <50>; */
-            /* key-positions = <17 18 49>; */
-            /* bindings = <&starr_>; */
-        /* }; */
+        #include "steno.combo"
+
     };
 
 keymap {
