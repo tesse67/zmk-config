@@ -14,7 +14,7 @@
 #define NUMPAD 4
 /* #define EXTRA_WASD 5 */
 #define CONTRO 5
-#define GERMAN 6
+#define STENO 6
 /* #define WASD_TYPE 6 */
 #define _____ &none
 
@@ -831,23 +831,23 @@ name: name##_mod_tap {                     \
           bindings = <&kp LS(LALT)>;
         };
 
-        combo_dir_german {
-          timeout-ms = <66>;
-          key-positions = <38 39>;
-          bindings = <&sl GERMAN>;
-        };
+        /* combo_dir_german { */
+        /*   timeout-ms = <66>; */
+        /*   key-positions = <38 39>; */
+        /*   bindings = <&sl GERMAN>; */
+        /* }; */
 
-        combo_QWERTY {
+        combo_STENO {
           timeout-ms = <66>;
           key-positions = <42 43>;
           layers = <BASE>;
-          bindings = <&to QWERTY>;
+          bindings = <&to STENO>;
         };
 
         combo_BASE {
           timeout-ms = <66>;
           key-positions = <42 43>;
-          layers = <QWERTY>;
+          layers = <STENO>;
           bindings = <&to BASE>;
         };
 
@@ -1020,8 +1020,8 @@ keymap {
                                        &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
             >;
         };
-        wasd_type_layer {
-            display-name = "german";
+        steno_layer {
+            display-name = "steno";
 // ---------------------------------------------------
 //         |      |       |     |   Y  |  H   |     
 //         |      |       |     |      |  T   |           
@@ -1029,11 +1029,11 @@ keymap {
 // |       |      |       |     |      |  B   |  
 //                              |      |      |        |     
             bindings = <
-          &trans     &trans   &trans   &trans   &trans                 &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans   &trans   &trans                 _____     _____   _____ _____ _____   
-&trans    &https     &https   &qj      &https   &trans                 _____ &https _____ _____ _____ _____  
-&trans    &trans     &trans   &trans   &trans   &trans                 _____    _____  _____  _____  _____                        &trans  
-                                       &trans   &trans  &trans  _____ &trans    &uc UC_DE_SS
+              &kp N1     &kp N2        &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
+              &kp Q      &kp W         &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
+&lt RAISE ESC &kp A      &kp S         &kp D       &kp F       &kp G                       &kp H     &kp J       &kp K       &kp L      &kp SEMI &kp BSPC
+&kp LSHFT     &kp Z      &kp X         &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH &kp RSHFT
+                         &kp C       &kp V                   &paster2                    &caps_word &kp M       &kp COMMA
             >;
         };
 
