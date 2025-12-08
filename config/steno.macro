@@ -138,13 +138,6 @@ steno_EZ {
     key-positions = <48 43>;
     bindings = <&stenocombo_easy>;
 };
-// inx 25031
-// U -> you
-steno_U {
-    timeout-ms = <33>;
-    key-positions = <49>;
-    bindings = <&stenocombo_you>;
-};
 // inx 25034
 // UFRPBD -> understand
 steno_UFRPBD {

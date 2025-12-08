@@ -146,15 +146,6 @@ stenocombo_easy: stenocombo_easy {
     , <&macro_tap &kp E &kp A &kp S &kp Y>
     ;
 };
-// inx 25031
-stenocombo_you: stenocombo_you {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-    = <&macro_tap_time 1>
-    , <&macro_tap &kp Y &kp O &kp U>
-    ;
-};
 // inx 25034
 stenocombo_understand: stenocombo_understand {
     compatible = "zmk,behavior-macro";
