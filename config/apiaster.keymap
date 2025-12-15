@@ -837,6 +837,13 @@ name: name##_mod_tap {                     \
         /*   bindings = <&sl GERMAN>; */
         /* }; */
 
+        combo_qwerty {
+          timeout-ms = <66>;
+          key-positions = <38 39>;
+          layers = <BASE>;
+          bindings = <&to QWERTY>;
+        };
+
         combo_STENO {
           timeout-ms = <66>;
           key-positions = <15 16>;
@@ -850,6 +857,14 @@ name: name##_mod_tap {                     \
           layers = <STENO>;
           bindings = <&to BASE>;
         };
+
+        combo_BASE2 {
+          timeout-ms = <66>;
+          key-positions = <38 39>;
+          layers = <QWERTY>;
+          bindings = <&to BASE>;
+        };
+
 
         combo_searcher {
           timeout-ms = <66>;
