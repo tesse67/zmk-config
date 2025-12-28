@@ -51,10 +51,10 @@ combo_copy {
   bindings = <&copyer>;
 };
 
-combo_copy2 {
+combo_super {
   timeout-ms = <66>;
   key-positions = <36 37>;
-  bindings = <&kp LGUI>;
+  bindings = <&qgui>;
 };
 
 combo_pastee {
