@@ -105,7 +105,7 @@ combo_new_copy {
 
 combo_new_paste {
   timeout-ms = <66>;
-  key-positions = <27 38>;
+  key-positions = <26 16>;
   bindings = <&paster>;
 };
 
