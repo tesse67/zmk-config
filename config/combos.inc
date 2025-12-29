@@ -101,13 +101,13 @@ combo_new_copy {
   timeout-ms = <66>;
   key-positions = <13 25>;
   bindings = <&copyer>;
-}
+};
 
 combo_new_paste {
   timeout-ms = <66>;
   key-positions = <27 38>;
   bindings = <&paster>;
-}
+};
 
 combo_dir_up {
   timeout-ms = <66>;
