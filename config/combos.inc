@@ -97,15 +97,27 @@ combo_dir_right {
   bindings = <&kp RIGHT>;
 };
 
+combo_new_copy {
+  timeout-ms = <66>;
+  key-positions = <13 25>;
+  bindings = <&copyer>;
+}
+
+combo_new_paste {
+  timeout-ms = <66>;
+  key-positions = <27 38>;
+  bindings = <&paster>;
+}
+
 combo_dir_up {
   timeout-ms = <66>;
-  key-positions = <16 26>;
+  key-positions = <38 40>;
   bindings = <&kp UP>;
 };
 
 combo_dir_down {
   timeout-ms = <66>;
-  key-positions = <13 25>;
+  key-positions = <35 37>;
   bindings = <&kp DOWN>;
 };
 
@@ -215,3 +227,4 @@ combo_uneq {
   key-positions = <11 12 49>;
   bindings = <&uneq>;
 };
+
