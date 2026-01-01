@@ -237,11 +237,11 @@ combo_pipecb {
 combo_tabwt {
   timeout-ms = <66>;
   key-positions = <10 24>;
-  bindings = <&kp tab>;
+  bindings = <&kp TAB>;
 };
 
 combo_starnsemi {
   timeout-ms = <66>;
   key-positions = <27 19>;
-  bindings = <&kp star>;
+  bindings = <&kp STAR>;
 };
