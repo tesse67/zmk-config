@@ -228,3 +228,20 @@ combo_uneq {
   bindings = <&uneq>;
 };
 
+combo_pipecb {
+  timeout-ms = <66>;
+  key-positions = <21 37>;
+  bindings = <&kp PIPE>;
+};
+
+combo_tabwt {
+  timeout-ms = <66>;
+  key-positions = <10 24>;
+  bindings = <&kp tab>;
+};
+
+combo_starnsemi {
+  timeout-ms = <66>;
+  key-positions = <27 19>;
+  bindings = <&kp star>;
+};
