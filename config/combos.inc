@@ -65,7 +65,7 @@ combo_pastee {
 combo_pastee2 {
   timeout-ms = <66>;
   key-positions = <20 24>;
-  bindings = <&kp paster>;
+  bindings = <&paster>;
 };
 // combo_paster2 {
 //     timeout-ms = <66>;
