@@ -62,10 +62,10 @@ combo_pastee {
   key-positions = <20 33>;
   bindings = <&paster>;
 };
-combo_pastee2 {
+combo_tabber {
   timeout-ms = <66>;
   key-positions = <20 24>;
-  bindings = <&paster>;
+  bindings = <&kp TAB>;
 };
 // combo_paster2 {
 //     timeout-ms = <66>;
@@ -237,7 +237,7 @@ combo_pipecb {
 combo_tabwt {
   timeout-ms = <66>;
   key-positions = <10 24>;
-  bindings = <&kp TAB>;
+  bindings = <&paster>;
 };
 
 combo_starnsemi {
