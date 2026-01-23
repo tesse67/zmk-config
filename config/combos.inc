@@ -62,10 +62,10 @@ combo_pastee {
   key-positions = <20 33>;
   bindings = <&paster>;
 };
-combo_tabber {
+combo_pastee2 {
   timeout-ms = <66>;
   key-positions = <20 24>;
-  bindings = <&kp TAB>;
+  bindings = <&kp paster>;
 };
 // combo_paster2 {
 //     timeout-ms = <66>;

@@ -86,6 +86,7 @@ name: name##_mod_tap {                     \
 
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Default to Linux input system
+ //default-mode = <UC_MODE_LINUX_ALT>;
   minimum-length = <0>;            // Set to desired minimum input length
   linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
   win-compose-key = <RALT>;        // Overwrite WinCompose compose key
@@ -217,12 +218,19 @@ keymap {
 // |   Tab |  "  |  '  |  (   |  )   |  T   |                   |  @   |  !    |  -    |  ?   |   :   |  F11
 // |   `   |  |  |  &  |  [   |  ]   |  #   |                   |  \   |  /    |  ~    |   %  |   ;   |  F12
 //               |     |      |      |      |        |  |       |      |       |       |      |
-            bindings = <
+//             bindings = <
+//          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
+//          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
+// &uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
+// &kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
+//                                                   &kp BSLH      &kp PRCNT &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
+
+             bindings = <
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
-&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
-&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
-                                                  &kp BSLH      &kp PRCNT &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
+&trans &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
+&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     &trans
+                                                  &kp BSLH      &kp PRCNT  &trans      &trans &trans &trans     
             >;
         };
 
@@ -236,9 +244,9 @@ keymap {
 //                                   |             |        |      |  |      |       |      |
             bindings = <
           &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &bootloader           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 
-          &copyer    &paster       &deler     &searcher       _____                     &kp PG_UP   &copyer      &kp UP       &kp INS      &paster
-&trans    &aller     &copyer       &copyer    &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
-&trans    &allcuter  &copyer       &paster    &allcuter   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &trans      &kp END     _____   &trans
+          &copyer    &paster       &allcuter  &searcher       _____                     &kp PG_UP   &copyer      &kp UP       &kp INS      &paster
+&trans    &trans     &aller       &searcher  &kp TAB   &kp C_VOL_UP               &kp PG_UP    &kp LEFT    &kp DOWN     &kp RIGHT    &trans  &trans
+&trans    &allcuter  &copyer       &paster    &allcuter   &kp C_VOL_DN                 &kp PG_DN    &kp HOME   &kp DEL      &kp END     _____   &trans
                                             &kp ENTER  &allcuter &trans           &trans       &kp TAB     &kp ENTER
             >;
         };
@@ -252,23 +260,36 @@ keymap {
 // | reset | CAPS | INS    | PRNTSCR | MENU        | studio |                | PGDN  |   <- |   v   |  ->  |  off     | reset |
 // |       |      |        |         | QWERTY      |  boot  |                | boot  |      |       |      |  POWER   | reset |
 //                                   |             |        |      |  |      |       |      |
+//             bindings = <
+//           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
+//           &cF1       &cF2     &cF3     &cF4      &cF5                               &cF6       &cF7     &cF8     &cF9    &cF10
+// &cF11     &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9  &kp N0 &kp BSPC
+// &cF12     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
+//                                        _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
+
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
           &cF1       &cF2     &cF3     &cF4      &cF5                               &cF6       &cF7     &cF8     &cF9    &cF10
 &cF11     &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8   &kp N9  &kp N0 &kp BSPC
-&cF12     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
+&cF12     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &trans 
                                        _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
             >;
         };
 
         main2_layer {
             display-name = "contro";
+//             bindings = <
+//           &trans     &trans   &trans   &kp Y    &kp H                  &trans    &trans  &trans  &trans  &trans  
+//           &trans     &trans   &trans   &trans   &kp T                  &trans    &uc UC_DE_OE &restorer &uc UC_DE_UE &trans  
+// &kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &uc UC_DE_AE   &trans  
+// &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
+                                       // &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
             bindings = <
           &trans     &trans   &trans   &kp Y    &kp H                  &trans    &trans  &trans  &trans  &trans  
-          &trans     &trans   &trans   &trans   &kp T                  &trans    &uc UC_DE_OE &restorer &uc UC_DE_UE &trans  
-&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &uc UC_DE_AE   &trans  
+          &trans     &trans   &trans   &trans   &kp T                  &trans    &trans &restorer &trans &trans  
+&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &trans   &trans  
 &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
-                                       &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
+                                       &trans   &trans  &trans  &trans &trans    &trans
             >;
         };
         steno_layer {
