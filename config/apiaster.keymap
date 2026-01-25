@@ -230,7 +230,7 @@ keymap {
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
 &trans &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
 &kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     &trans
-                                                  &kp BSLH      &kp PRCNT  &trans      &trans &trans &trans     
+                                                  &kp BSLH      &kp PRCNT  &trans      &trans &trans &trans
             >;
         };
 
@@ -285,7 +285,7 @@ keymap {
 // &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
                                        // &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
             bindings = <
-          &trans     &trans   &trans   &kp Y    &kp H                  &trans    &trans  &trans  &trans  &trans  
+          &trans     &trans   &trans   &kp Y    &kp H                  &uc UC_DE_OE &trans  &trans  &trans  &trans  
           &trans     &trans   &trans   &trans   &kp T                  &trans    &trans &restorer &trans &trans  
 &kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &trans   &trans  
 &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  

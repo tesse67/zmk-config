@@ -103,6 +103,13 @@ combo_new_copy {
   bindings = <&copyer>;
 };
 
+combo_ralt {
+  timeout-ms = <66>;
+  key-positions = <0 1>;
+  bindings = <&kp RALT>;
+};
+
+
 combo_new_paste {
   timeout-ms = <66>;
   key-positions = <26 16>;
