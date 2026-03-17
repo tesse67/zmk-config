@@ -218,19 +218,19 @@ keymap {
 // |   Tab |  "  |  '  |  (   |  )   |  T   |                   |  @   |  !    |  -    |  ?   |   :   |  F11
 // |   `   |  |  |  &  |  [   |  ]   |  #   |                   |  \   |  /    |  ~    |   %  |   ;   |  F12
 //               |     |      |      |      |        |  |       |      |       |       |      |
-//             bindings = <
-//          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
-//          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
-// &uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
-// &kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
-//                                                   &kp BSLH      &kp PRCNT &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
-
-             bindings = <
+            bindings = <
          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
-&trans &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
-&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     &trans
-                                                  &kp BSLH      &kp PRCNT  &trans      &trans &trans &trans
+&uc UC_DE_SS &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
+&kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     _____
+                                                  &kp BSLH      &kp PRCNT &uc UC_DE_OE &uc UC_DE_AE &uc UC_DE_SS &uc UC_DE_OE     
+
+//              bindings = <
+//          &kp F3        &kp F4      &kp F5         &kp F6         &kp F7                  &kp F8    &kp F9         &kp F10          &kp F11       &kp F12   
+//          &kp UNDER     &kp EQUAL   &kp LBRC       &kp RBRC        &kp GT                 &kp BSLH   &kp CARET      &kp PLUS        &kp DLLR     &kp PRCNT
+// &trans &hl LALT DQT &hl LGUI SQT &hl LSHFT LPAR &hl LCTRL RPAR  &kp LT          &kp AT    &hr RCTRL EXCL &hr RSHFT MINUS &hr RGUI STAR &hr RALT COLON &kp BSPC
+// &kp BSLH &kp PIPE     &kp AMPS      &kp LBKT      &kp RBKT        &kp GT               &kp GRAVE &kp HASH       &kp TILDE       &kp PRCNT   &kp SEMI     &trans
+//                                                   &kp BSLH      &kp PRCNT  &trans      &trans &trans &trans
             >;
         };
 
