@@ -185,18 +185,21 @@ combo_contro2 {
 };
 combo_parens {
   timeout-ms = <66>;
-  key-positions = <23 24 49>;
+  key-positions = <23 24>;
   bindings = <&parens_>;
+  layers =  <LOWER>;
 };
 combo_brace {
   timeout-ms = <66>;
-  key-positions = <12 13 49>;
+  key-positions = <12 13>;
   bindings = <&brace_>;
+  layers =  <LOWER>;
 };
 combo_bracket {
   timeout-ms = <66>;
-  key-positions = <35 36 49>;
+  key-positions = <35 36>;
   bindings = <&bracket_>;
+  layers =  <LOWER>;
 };
 
 combo_bracketer {
