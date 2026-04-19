@@ -1,3 +1,136 @@
+sF1: sF1{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F1>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF2: sF2{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F2>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF3: sF3{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F3>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF4: sF4{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F4>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF5: sF5{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F5>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF6: sF6{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F6>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF7: sF7{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F7>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF8: sF8{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F8>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF9: sF9{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F9>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF10: sF10{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F10>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF11: sF11{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F11>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+sF12: sF12{
+  compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+  bindings
+    = <&macro_tap_time 1>
+    , <&macro_press &kp LSHFT>
+    , <&macro_tap &kp F12>
+    , <&macro_release &kp LSHFT>
+    ;
+};
+
+
 cF1: cF1{
   compatible = "zmk,behavior-macro";
 #binding-cells = <0>;

@@ -263,14 +263,14 @@ keymap {
 //             bindings = <
 //           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
 //           &cF1       &cF2     &cF3     &cF4      &cF5                               &cF6       &cF7     &cF8     &cF9    &cF10
-// &cF11     &kp F13     &kp F14 &kp F15  &kp F16   &kp F17                            &kp F18    &kp F19  &kp F20  &kp F21 &kp F22 &kp BSPC
+// &cF11     &sF1       &sF2     &sF3     &sF4      &sF5                               &sF6       &sF7     &sF8     &sF9    &sF10 &kp BSPC
 // &cF12     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &uc UC_DE_SS 
 //                                        _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
 
             bindings = <
           &kp N1     &kp N2   &kp N3   &kp N4    &kp N5                            &none  &none  &none  &none  &none 
           &cF1       &cF2     &cF3     &cF4      &cF5                               &cF6       &cF7     &cF8     &cF9    &cF10
-&cF11     &kp F13     &kp F14 &kp F15  &kp F16   &kp F17                            &kp F18    &kp F19  &kp F20  &kp F21 &kp F22 &kp BSPC
+&cF11     &sF1       &sF2     &sF3     &sF4      &sF5                               &sF6       &sF7     &sF8     &sF9    &sF10 &kp BSPC
 &cF12     &kp F1     &kp F2   &kp F3   &kp F4    &kp F5                             &kp F6     &kp F7   &kp F8   &kp F9  &kp F10 &trans 
                                        _____     &kp SPACE &kp LALT   _____  &kp F11 &kp F12
             >;
