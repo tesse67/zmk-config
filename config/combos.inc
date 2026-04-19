@@ -210,13 +210,16 @@ combo_bracketer {
 
 combo_quote {
   timeout-ms = <66>;
-  key-positions = <21 22 49>;
+  key-positions = <21 22>;
   bindings = <&quote_>;
+  layers =  <LOWER>;
 };
+
 combo_squote {
   timeout-ms = <66>;
-  key-positions = <22 23 49>;
+  key-positions = <22 23>;
   bindings = <&squote_>;
+  layers =  <LOWER>;
 };
 
 combo_squotee {
