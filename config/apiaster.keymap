@@ -189,7 +189,7 @@ keymap {
               &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
 &lt RAISE ESC &hl LSHFT C &kp R      &kp S       &ht_ctl 0 T &kp M                       &kp X     &kp N       &kp E       &kp I    &hr RSHFT A  &kp BSPC 
 &kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp RSHFT
-                          &ht_alt 0 ENTER  &lt NUMPAD SPACE  &caps_word                  &to CONTRO &sl LOWER  &kp SPACE 
+                          &ht_alt 0 ENTER  &lt NUMPAD SPACE  &caps_word                  &to STENO &sl LOWER  &kp SPACE 
             >;
         };
 
@@ -206,7 +206,7 @@ keymap {
               &kp Q      &kp W         &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
 &lt RAISE ESC &hl LSHFT A &kp S        &kp D       &hl LCTRL F &kp G                       &kp H     &kp J       &kp K       &kp L      &hr RSHFT SEMI &kp BSPC
 &kp LSHFT     &kp Z       &kp X        &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &kp RSHFT
-                         &ht_alt 0 ENTER  &lt NUMPAD SPACE     &caps_word                  &to CONTRO &sl LOWER  &kp SPACE 
+                         &ht_alt 0 ENTER  &lt NUMPAD SPACE     &caps_word                  &to STENO &sl LOWER  &kp SPACE 
             >;
         };
 
@@ -285,11 +285,11 @@ keymap {
 // &trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
                                        // &trans   &trans  &trans  &trans &trans    &uc UC_DE_SS
             bindings = <
-              &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9   &kp N0
-              &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
-&lt RAISE ESC &kp C       &kp R      &kp S       &kp T       &kp M                       &kp X     &kp N       &kp E       &kp I    &kp A        &kp BSPC 
-&kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp RSHFT
-                          &ht_alt 0 ENTER  &lt NUMPAD SPACE  &caps_word                  &to BASE &sl LOWER  &kp SPACE 
+          &trans     &trans   &trans   &kp Y    &kp H                  &uc UC_DE_OE &trans  &trans  &trans  &trans  
+          &trans     &trans   &trans   &trans   &kp T                  &trans    &trans &restorer &trans &trans  
+&kp LALT  &trans     &trans   &trans   &trans   &kp G                  &trans    &lefter  &closer  &righter  &trans   &trans  
+&trans    &trans     &trans   &trans   &trans   &kp B                  &trans    &trans  &trans  &trans  &trans   &trans  
+                                       &trans   &trans  &trans  &trans &trans    &trans
             >;
         };
         steno_layer {
@@ -301,11 +301,11 @@ keymap {
 // |       |      |       |     |      |  B   |  
 //                              |      |      |        |     
             bindings = <
-              &kp N1     &kp N2        &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9     &kp N0
-              &kp Q      &kp W         &kp E       &kp R       &kp T                       &kp Y     &kp U       &kp I       &kp O      &kp P
-&lt RAISE ESC &kp A      &kp S         &kp D       &kp F       &kp G                       &kp H     &kp J       &kp K       &kp L      &kp SEMI &kp SQT
-&kp LSHFT     &kp Z      &kp X         &kp C       &kp V       &kp B                       &kp N     &kp M       &kp COMMA   &kp DOT    &kp LBKT &kp RSHFT
-              &kp C       &kp V &kp SPACE                       &kp SPACE &kp N       &kp M
+              &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                      &kp N6    &kp N7      &kp N8      &kp N9   &kp N0
+              &kp W       &kp L      &kp Y       &kp P       &kp K                       &kp Z     &kp F       &kp O       &kp U    &kp SEMI
+&lt RAISE ESC &kp C       &kp R      &kp S       &kp T       &kp M                       &kp X     &kp N       &kp E       &kp I    &kp  A  &kp BSPC 
+&kp LSHFT     &kp J       &kp V      &kp G       &kp D       &kp B                       &kp Q     &kp H       &kp COMMA   &kp DOT  &kp FSLH     &kp RSHFT
+                          &ht_alt 0 ENTER  &lt NUMPAD SPACE  &caps_word                  &to BASE &sl LOWER  &kp SPACE 
             >;
         };
 
