@@ -139,6 +139,12 @@ combo_dir_shift_alt {
 /*   bindings = <&sl GERMAN>; */
 /* }; */
 
+combo_steno2 {
+  timeout-ms = <66>;
+  key-positions = <38 19>;
+  bindings = <&to STENO>;
+};
+
 combo_qwerty {
   timeout-ms = <66>;
   key-positions = <38 39>;
