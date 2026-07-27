@@ -142,7 +142,15 @@ combo_dir_shift_alt {
 combo_steno2 {
   timeout-ms = <66>;
   key-positions = <38 19>;
+  layers = <BASE>;
   bindings = <&to STENO>;
+};
+
+combo_stenoback {
+  timeout-ms = <66>;
+  key-positions = <38 19>;
+  layers = <STENO>;
+  bindings = <&to BASE>;
 };
 
 combo_qwerty {
